@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | LumiCore — Digital Consultancy Nairobi, Kenya</title>
+<meta name="description" content="Transparent, value-based pricing for web design, CRM, SEO, branding, and digital marketing services in Nairobi, Kenya. Book a free discovery call with LumiCore.">
+<link rel="canonical" href="https://lumicore.co.ke/pricing.html">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#0b0c10;--deep:#111420;--surface:#f7f6f2;--warm:#eeebe2;
+    --gold:#c6a96b;--gold-lt:#e4d4ad;--gold-dk:#8c6f3a;
+    --teal:#1a3a3a;--teal-mid:#2a5252;--teal-lt:#3d7070;
+    --text-muted:#5a5f6e;--border:rgba(198,169,107,0.25);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Outfit',sans-serif;background:var(--surface);color:var(--ink);overflow-x:hidden;}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.6rem 5rem;display:flex;justify-content:space-between;align-items:center;transition:background 0.4s,padding 0.4s;background:rgba(11,12,16,0.95);backdrop-filter:blur(14px);}
+  .logo{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;letter-spacing:0.04em;color:#fff;text-decoration:none;}
+  .logo span{color:var(--gold);}
+  .nav-links{display:flex;gap:2.4rem;list-style:none;align-items:center;}
+  .nav-links a{text-decoration:none;font-size:0.78rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);transition:color 0.25s;}
+  .nav-links a:hover{color:var(--gold-lt);}
+  .nav-pill{background:var(--gold)!important;color:var(--deep)!important;padding:0.55rem 1.5rem!important;border-radius:100px!important;font-weight:600!important;}
+
+  /* HERO */
+  .pricing-hero{background:var(--deep);padding:10rem 5rem 6rem;text-align:center;position:relative;overflow:hidden;}
+  .pricing-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(26,58,58,0.6) 0%,transparent 60%),radial-gradient(ellipse at 30% 80%,rgba(198,169,107,0.06) 0%,transparent 50%);}
+  .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(198,169,107,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(198,169,107,0.04) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+  .pricing-hero-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}
+  .section-eyebrow{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold-dk);font-weight:600;margin-bottom:1rem;}
+  .pricing-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5vw,4.5rem);font-weight:700;line-height:1.1;color:#fff;margin-bottom:1.5rem;}
+  .pricing-hero h1 em{color:var(--gold);font-style:italic;}
+  .pricing-hero p{font-size:1.05rem;line-height:1.8;color:rgba(255,255,255,0.5);max-width:540px;margin:0 auto 2.5rem;}
+  .toggle-wrap{display:inline-flex;align-items:center;gap:0;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:100px;padding:0.3rem;}
+  .toggle-btn{padding:0.5rem 1.4rem;border-radius:100px;font-family:'Outfit',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border:none;background:transparent;color:rgba(255,255,255,0.4);transition:all 0.25s;}
+  .toggle-btn.active{background:var(--gold);color:var(--deep);}
+
+  /* PRICING GRID */
+  .pricing-section{padding:6rem 5rem;max-width:1300px;margin:0 auto;}
+  .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:5rem;}
+  .price-card{background:#fff;border:1px solid rgba(198,169,107,0.15);border-radius:12px;padding:2.8rem 2.5rem;position:relative;transition:transform 0.3s,box-shadow 0.3s;overflow:hidden;}
+  .price-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-dk),var(--gold));opacity:0;transition:opacity 0.3s;}
+  .price-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(198,169,107,0.12);}
+  .price-card:hover::before{opacity:1;}
+  .price-card.popular{border-color:var(--gold);background:var(--deep);transform:translateY(-8px);box-shadow:0 24px 60px rgba(198,169,107,0.18);}
+  .price-card.popular::before{opacity:1;}
+  .popular-badge{position:absolute;top:1.5rem;right:1.5rem;background:var(--gold);color:var(--deep);font-size:0.62rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:100px;}
+  .card-tier{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-dk);font-weight:600;margin-bottom:0.8rem;}
+  .price-card.popular .card-tier{color:var(--gold);}
+  .card-name{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--deep);margin-bottom:0.5rem;}
+  .price-card.popular .card-name{color:#fff;}
+  .card-desc{font-size:0.85rem;line-height:1.6;color:var(--text-muted);margin-bottom:2rem;padding-bottom:2rem;border-bottom:1px solid rgba(198,169,107,0.1);}
+  .price-card.popular .card-desc{color:rgba(255,255,255,0.45);border-color:rgba(255,255,255,0.08);}
+  .price-amount{margin-bottom:2rem;}
+  .price-from{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:0.2rem;}
+  .price-card.popular .price-from{color:rgba(255,255,255,0.35);}
+  .price-num{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:700;color:var(--deep);line-height:1;}
+  .price-card.popular .price-num{color:#fff;}
+  .price-num sup{font-size:1rem;vertical-align:super;font-family:'Outfit',sans-serif;font-weight:600;}
+  .price-range{font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;}
+  .price-card.popular .price-range{color:rgba(255,255,255,0.35);}
+  .price-delivery{display:inline-flex;align-items:center;gap:0.4rem;background:rgba(26,58,58,0.08);padding:0.3rem 0.8rem;border-radius:100px;font-size:0.72rem;color:var(--teal-lt);margin-bottom:2rem;}
+  .price-card.popular .price-delivery{background:rgba(198,169,107,0.1);color:var(--gold-lt);}
+  .feature-list{display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2.5rem;}
+  .feature{display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;line-height:1.5;color:var(--ink);}
+  .price-card.popular .feature{color:rgba(255,255,255,0.75);}
+  .feature-check{width:18px;height:18px;border-radius:50%;background:rgba(198,169,107,0.12);border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:0.6rem;color:var(--gold);}
+  .price-card.popular .feature-check{background:rgba(198,169,107,0.15);}
+  .card-cta{display:block;text-align:center;padding:0.9rem 2rem;border-radius:6px;font-family:'Outfit',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:all 0.25s;}
+  .cta-outline{border:1.5px solid var(--gold);color:var(--gold-dk);background:transparent;}
+  .cta-outline:hover{background:var(--gold);color:var(--deep);transform:translateY(-2px);}
+  .cta-filled{background:var(--gold);color:var(--deep);border:1.5px solid var(--gold);}
+  .cta-filled:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 30px rgba(198,169,107,0.3);}
+
+  /* ADDONS */
+  .addons-section{background:var(--deep);padding:6rem 5rem;}
+  .addons-inner{max-width:1300px;margin:0 auto;}
+  .addons-header{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:4rem;}
+  .addons-header p{font-size:1rem;line-height:1.8;color:rgba(255,255,255,0.45);}
+  .addons-header .section-eyebrow{color:var(--gold);}
+  .addons-header h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,3vw,3rem);font-weight:700;color:#fff;}
+  .addons-header h2 em{color:var(--gold);font-style:italic;}
+  .addons-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.06);border-radius:8px;overflow:hidden;}
+  .addon{background:var(--deep);padding:2rem;transition:background 0.3s;cursor:default;}
+  .addon:hover{background:rgba(255,255,255,0.03);}
+  .addon-icon{font-size:1.5rem;margin-bottom:1rem;display:block;}
+  .addon-name{font-weight:600;font-size:0.92rem;color:#fff;margin-bottom:0.5rem;}
+  .addon-price{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--gold);font-weight:700;margin-bottom:0.4rem;}
+  .addon-desc{font-size:0.78rem;line-height:1.5;color:rgba(255,255,255,0.35);}
+
+  /* PROCESS */
+  .how-section{padding:6rem 5rem;background:var(--warm);}
+  .how-inner{max-width:1100px;margin:0 auto;}
+  .how-header{text-align:center;margin-bottom:4rem;}
+  .how-header h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,3vw,3rem);font-weight:700;color:var(--deep);}
+  .how-header h2 em{color:var(--teal-mid);font-style:italic;}
+  .how-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+  .how-step{background:#fff;border:1px solid rgba(198,169,107,0.15);border-radius:10px;padding:2.5rem;position:relative;}
+  .how-step-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:700;color:rgba(198,169,107,0.15);line-height:1;margin-bottom:1rem;}
+  .how-step h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--deep);margin-bottom:0.6rem;}
+  .how-step p{font-size:0.85rem;line-height:1.7;color:var(--text-muted);}
+
+  /* FAQ */
+  .faq-section{padding:6rem 5rem;max-width:860px;margin:0 auto;}
+  .faq-header{text-align:center;margin-bottom:3.5rem;}
+  .faq-header h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,3vw,3rem);font-weight:700;color:var(--deep);}
+  .faq-header h2 em{color:var(--teal-mid);font-style:italic;}
+  .faq-item{border-bottom:1px solid rgba(198,169,107,0.2);overflow:hidden;}
+  .faq-q{width:100%;text-align:left;padding:1.5rem 0;background:none;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:'Outfit',sans-serif;font-size:1rem;font-weight:600;color:var(--deep);transition:color 0.25s;}
+  .faq-q:hover{color:var(--gold-dk);}
+  .faq-icon{width:24px;height:24px;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold);font-size:1rem;transition:transform 0.3s;line-height:1;}
+  .faq-item.open .faq-icon{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.16,1,0.3,1);}
+  .faq-item.open .faq-a{max-height:300px;}
+  .faq-a p{font-size:0.9rem;line-height:1.8;color:var(--text-muted);padding-bottom:1.5rem;}
+
+  /* CTA */
+  .cta-section{background:var(--deep);padding:7rem 5rem;text-align:center;position:relative;overflow:hidden;}
+  .cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(26,58,58,0.5) 0%,transparent 70%);}
+  .cta-inner{position:relative;z-index:1;max-width:640px;margin:0 auto;}
+  .cta-inner h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.5vw,3.2rem);font-weight:700;color:#fff;margin-bottom:1.2rem;line-height:1.15;}
+  .cta-inner h2 em{color:var(--gold);font-style:italic;}
+  .cta-inner p{font-size:1rem;line-height:1.8;color:rgba(255,255,255,0.48);margin-bottom:2.5rem;}
+  .cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;font-family:'Outfit',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.25s;cursor:pointer;border:none;padding:1rem 2.2rem;border-radius:4px;}
+  .btn-gold{background:var(--gold);color:var(--deep);}
+  .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 30px rgba(198,169,107,0.28);}
+  .btn-outline-white{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.2);}
+  .btn-outline-white:hover{border-color:var(--gold);color:var(--gold-lt);}
+
+  /* FOOTER */
+  footer{background:#070809;padding:3.5rem 5rem;display:flex;justify-content:space-between;align-items:center;gap:2rem;}
+  .footer-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff;}
+  .footer-logo span{color:var(--gold);}
+  .footer-center{font-size:0.75rem;color:rgba(255,255,255,0.22);text-align:center;line-height:1.7;}
+  .footer-links{display:flex;gap:2rem;list-style:none;}
+  .footer-links a{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,0.28);transition:color 0.25s;}
+  .footer-links a:hover{color:var(--gold);}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 0.7s,transform 0.7s;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  @media(max-width:960px){
+    nav{padding:1.2rem 2rem;}
+    .nav-links{display:none;}
+    .pricing-hero{padding:8rem 2rem 4rem;}
+    .pricing-section,.addons-section,.how-section,.faq-section,.cta-section{padding:5rem 2rem;}
+    .pricing-grid{grid-template-columns:1fr;}
+    .price-card.popular{transform:none;}
+    .addons-header{grid-template-columns:1fr;}
+    .addons-grid{grid-template-columns:repeat(2,1fr);}
+    .how-steps{grid-template-columns:1fr;}
+    footer{flex-direction:column;text-align:center;padding:2.5rem 2rem;}
+  }
+
+  /* ── MOBILE TOUCH FIX ── */
+  @media (hover: none) and (pointer: coarse) {
+    .btn-next, .btn-prev, .btn-submit,
+    .card-cta, .btn, .btn-gold, .btn-home,
+    .btn-wa, .btn-outline-white, .faq-q,
+    .choice-card, .ai-chip, .ai-send,
+    .ai-toggle-btn, .toggle-btn {
+      min-height: 44px;
+      cursor: pointer;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: rgba(198,169,107,0.2);
+    }
+    .btn-next:hover, .btn-submit:hover,
+    .card-cta:hover, .btn-gold:hover,
+    .price-card:hover, .how-step:hover,
+    .addon:hover, .testi-card:hover {
+      transform: none !important;
+      box-shadow: none !important;
+    }
+    .btn-next:active, .btn-submit:active { transform: scale(0.98); }
+    .card-cta:active { opacity: 0.85; }
+    .choice-card:active { border-color: var(--gold); background: rgba(198,169,107,0.08); }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">Lumi<span>Core</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#who">Who We Serve</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#contact" class="nav-pill">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="pricing-hero">
+  <div class="hero-grid"></div>
+  <div class="pricing-hero-inner">
+    <div class="section-eyebrow reveal">Transparent Pricing</div>
+    <h1 class="reveal">Investment in your <em>digital growth.</em></h1>
+    <p class="reveal">No hidden fees. No surprises. Every package is designed to deliver measurable value — with pricing tailored to where your business is right now.</p>
+  </div>
+</div>
+
+<!-- PRICING CARDS -->
+<section class="pricing-section">
+
+  <div class="pricing-grid">
+
+    <!-- STARTER -->
+    <div class="price-card reveal">
+      <div class="card-tier">Tier 01</div>
+      <div class="card-name">Starter</div>
+      <div class="card-desc">Perfect for small businesses, solo entrepreneurs, and new startups who need a clean, professional online presence fast.</div>
+      <div class="price-amount">
+        <span class="price-from">Starting from</span>
+        <div class="price-num"><sup>Ksh</sup> 35,000</div>
+        <div class="price-range">Up to Ksh 60,000</div>
+      </div>
+      <div class="price-delivery">⏱ Delivered in 1–2 weeks</div>
+      <div class="feature-list">
+        <div class="feature"><div class="feature-check">✓</div><span>3–5 pages (Home, About, Services, Contact)</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Mobile-responsive design</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Basic SEO setup</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Contact form integration</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>WhatsApp button</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>2 rounds of revisions</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Free domain setup assistance</span></div>
+      </div>
+      <a href="inquiry.html" target="_blank" class="card-cta cta-outline">Get a Quote →</a>
+    </div>
+
+    <!-- BUSINESS — POPULAR -->
+    <div class="price-card popular reveal">
+      <div class="popular-badge">Most Popular</div>
+      <div class="card-tier">Tier 02</div>
+      <div class="card-name" style="color:#fff;">Business</div>
+      <div class="card-desc">For growing businesses and SMEs who need a fully branded, high-performance website that converts visitors into clients.</div>
+      <div class="price-amount">
+        <span class="price-from">Starting from</span>
+        <div class="price-num"><sup>Ksh</sup> 65,000</div>
+        <div class="price-range">Up to Ksh 120,000</div>
+      </div>
+      <div class="price-delivery">⏱ Delivered in 2–3 weeks</div>
+      <div class="feature-list">
+        <div class="feature"><div class="feature-check">✓</div><span>5–10 custom pages</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Full brand alignment & custom design</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Full SEO optimization</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Google Analytics setup</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Cookie banner & Privacy Policy</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>WhatsApp & contact integrations</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>3 rounds of revisions</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>2 weeks post-launch support</span></div>
+      </div>
+      <a href="inquiry.html" target="_blank" class="card-cta cta-filled">Get a Quote →</a>
+    </div>
+
+    <!-- PREMIUM -->
+    <div class="price-card reveal">
+      <div class="card-tier">Tier 03</div>
+      <div class="card-name">Premium</div>
+      <div class="card-desc">For established companies and organizations who need a powerful digital presence with advanced functionality and ongoing support.</div>
+      <div class="price-amount">
+        <span class="price-from">Starting from</span>
+        <div class="price-num"><sup>Ksh</sup> 130,000</div>
+        <div class="price-range">Ksh 250,000 and above</div>
+      </div>
+      <div class="price-delivery">⏱ Delivered in 3–5 weeks</div>
+      <div class="feature-list">
+        <div class="feature"><div class="feature-check">✓</div><span>10+ pages with advanced animations</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Blog / content management system</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>CRM integration</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Speed & performance optimization</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>AI chatbot integration</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Unlimited revisions during build</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>1 month post-launch support</span></div>
+        <div class="feature"><div class="feature-check">✓</div><span>Staff training & documentation</span></div>
+      </div>
+      <a href="inquiry.html" target="_blank" class="card-cta cta-outline">Get a Quote →</a>
+    </div>
+
+  </div>
+
+  <!-- NOTE -->
+  <div class="reveal" style="background:#fff;border:1px solid rgba(198,169,107,0.2);border-radius:8px;padding:2rem 2.5rem;display:flex;align-items:center;gap:1.5rem;max-width:860px;margin:0 auto;">
+    <div style="font-size:2rem;flex-shrink:0;">💡</div>
+    <div>
+      <div style="font-weight:700;font-size:0.95rem;color:var(--deep);margin-bottom:0.3rem;">Not sure which tier fits you?</div>
+      <div style="font-size:0.87rem;line-height:1.7;color:var(--text-muted);">Book a free 30-minute discovery call. We'll listen to your goals and recommend the right package — no pressure, no commitment. <a href="inquiry.html" target="_blank" style="color:var(--gold-dk);font-weight:600;text-decoration:none;">Fill our form →</a></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ADD-ONS -->
+<section class="addons-section">
+  <div class="addons-inner">
+    <div class="addons-header reveal">
+      <div>
+        <div class="section-eyebrow">Add-On Services</div>
+        <h2>Extend your<br><em>ecosystem.</em></h2>
+      </div>
+      <p>Pair any website package with these services to build a complete digital ecosystem. Bundled add-ons receive a 10–15% discount.</p>
+    </div>
+    <div class="addons-grid reveal">
+      <div class="addon">
+        <span class="addon-icon">◈</span>
+        <div class="addon-name">Logo & Brand Identity</div>
+        <div class="addon-price">Ksh 15,000 – 40,000</div>
+        <div class="addon-desc">Full brand identity including logo, colors, typography, and brand guidelines.</div>
+      </div>
+      <div class="addon">
+        <span class="addon-icon">✦</span>
+        <div class="addon-name">Copywriting</div>
+        <div class="addon-price">Ksh 3,000 – 8,000 / page</div>
+        <div class="addon-desc">Conversion-focused copy for every page of your website.</div>
+      </div>
+      <div class="addon">
+        <span class="addon-icon">◎</span>
+        <div class="addon-name">SEO Monthly Retainer</div>
+        <div class="addon-price">Ksh 15,000 – 35,000 / mo</div>
+        <div class="addon-desc">Ongoing SEO to grow your organic traffic and search rankings.</div>
+      </div>
+      <div class="addon">
+        <span class="addon-icon">🔗</span>
+        <div class="addon-name">CRM Setup & Integration</div>
+        <div class="addon-price">Ksh 25,000 – 80,000</div>
+        <div class="addon-desc">HubSpot, Salesforce, Monday.com setup and integration with your site.</div>
+      </div>
+      <div class="addon">
+        <span class="addon-icon">⟁</span>
+        <div class="addon-name">Digital Marketing</div>
+        <div class="addon-price">Ksh 20,000 – 50,000 / mo</div>
+        <div class="addon-desc">Social media management, ad campaigns, email marketing, and analytics.</div>
+      </div>
+      <div class="addon">
+        <span class="addon-icon">🛒</span>
+        <div class="addon-name">E-Commerce / Online Shop</div>
+        <div class="addon-price">Ksh 80,000 – 200,000</div>
+        <div class="addon-desc">Full online store setup with product pages, cart, and payment gateway.</div>
+      </div>
+      <div class="addon">
+        <span class="addon-icon">🤖</span>
+        <div class="addon-name">AI Chatbot Integration</div>
+        <div class="addon-price">Ksh 20,000 – 45,000</div>
+        <div class="addon-desc">Claude-powered AI assistant trained on your business for 24/7 client support.</div>
+      </div>
+      <div class="addon">
+        <span class="addon-icon">🛠️</span>
+        <div class="addon-name">Monthly Maintenance</div>
+        <div class="addon-price">Ksh 8,000 – 20,000 / mo</div>
+        <div class="addon-desc">Regular updates, security, backups, performance monitoring, and support.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="how-inner">
+    <div class="how-header reveal">
+      <div class="section-eyebrow">How It Works</div>
+      <h2>From inquiry to<br><em>launch in 3 steps.</em></h2>
+    </div>
+    <div class="how-steps">
+      <div class="how-step reveal">
+        <div class="how-step-num">01</div>
+        <h3>Free Discovery Call</h3>
+        <p>Fill our inquiry form or WhatsApp us. We schedule a free 30-minute call to understand your business, goals, and what you need. No commitment required.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="how-step-num">02</div>
+        <h3>Proposal & Agreement</h3>
+        <p>We send a clear proposal with scope, timeline, and pricing. Once agreed, we collect a 50% deposit to kick off the project and begin work immediately.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="how-step-num">03</div>
+        <h3>Build, Launch & Handoff</h3>
+        <p>We design, build, and launch your website with full transparency. Final 50% is due on delivery. You get full ownership plus training and documentation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-header reveal">
+    <div class="section-eyebrow">Common Questions</div>
+    <h2>Frequently asked<br><em>questions.</em></h2>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-q" onclick="toggleFAQ(this)">
+      Do you require a deposit to start? <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a"><p>Yes — we require a 50% deposit before work begins, with the remaining 50% due on project completion and delivery. This protects both parties and ensures we can dedicate full resources to your project.</p></div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-q" onclick="toggleFAQ(this)">
+      What's included in post-launch support? <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a"><p>Post-launch support covers bug fixes, minor content updates, and technical assistance for the duration stated in your package. For ongoing support beyond that, we offer affordable monthly maintenance retainers.</p></div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-q" onclick="toggleFAQ(this)">
+      Do I own the website after completion? <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a"><p>Absolutely. Once final payment is made, you own 100% of the website — all code, content, and design assets. We hand everything over with full documentation and training so you're never dependent on us to make changes.</p></div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-q" onclick="toggleFAQ(this)">
+      Can I upgrade my package mid-project? <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a"><p>Yes — if your scope grows during the project, we'll agree on any additional costs upfront before proceeding. We're flexible and will always be transparent about what changes affect the price.</p></div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-q" onclick="toggleFAQ(this)">
+      Do you work with clients outside Nairobi? <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a"><p>Yes — while we're based in Nairobi, we work with clients across Kenya and East Africa. All discovery calls, reviews, and approvals happen remotely via WhatsApp, email, or video call.</p></div>
+  </div>
+
+  <div class="faq-item reveal">
+    <button class="faq-q" onclick="toggleFAQ(this)">
+      How do I pay? <span class="faq-icon">+</span>
+    </button>
+    <div class="faq-a"><p>We accept M-Pesa, bank transfer, and other mobile money options. Payment details are provided in your project agreement. We'll always confirm before any payment is made.</p></div>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner reveal">
+    <div class="section-eyebrow" style="color:var(--gold);">Ready to Start?</div>
+    <h2>Let's build something <em>extraordinary.</em></h2>
+    <p>Book your free 30-minute discovery call. We'll understand your business and recommend the right solution — no pressure, no commitment.</p>
+    <div class="cta-actions">
+      <a href="inquiry.html" target="_blank" class="btn btn-gold">Book a Free Call →</a>
+      <a href="https://wa.me/254713082563" target="_blank" class="btn btn-outline-white">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Lumi<span>Core</span></div>
+  <div class="footer-center">Copyright © 2026 LumiCore. Digital Consulting & Growth Solutions.<br>Clarity · Systems · Growth</div>
+  <ul class="footer-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), 60); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // FAQ toggle
+  function toggleFAQ(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>

@@ -400,6 +400,57 @@
 
   @media(max-width: 480px) { .ai-window { width: calc(100vw - 2rem); right: 1rem; } }
 
+
+  /* ── MOBILE TOUCH FIX ── */
+  @media (hover: none) and (pointer: coarse) {
+    .btn-gold:hover, .btn-outline:hover,
+    .btn-gold:active, .btn-outline:active {
+      transform: none !important;
+      box-shadow: none !important;
+    }
+    .btn-gold { -webkit-tap-highlight-color: rgba(198,169,107,0.3); }
+    .nav-pill:active { background: var(--gold-lt) !important; }
+    .service-card:hover { transform: none; box-shadow: none; }
+    .service-card:active { transform: translateY(-2px); }
+    .testi-card:hover { transform: none; box-shadow: none; }
+    .testi-card:active { transform: translateY(-2px); }
+    .social-link:hover { transform: none; background: none; }
+    .social-link:active { background: rgba(198,169,107,0.1); }
+    .ai-toggle-btn:hover { transform: none; }
+    .ai-toggle-btn:active { transform: scale(0.96); }
+    .ai-chip:hover { background: rgba(198,169,107,0.1); }
+    .ai-chip:active { background: rgba(198,169,107,0.2); }
+    .ai-send:hover { transform: none; }
+    .ai-send:active { transform: scale(0.95); }
+    .choice-card:hover { border-color: rgba(198,169,107,0.3); background: rgba(198,169,107,0.04); }
+    .btn-next:hover, .btn-prev:hover, .btn-submit:hover { transform: none; box-shadow: none; }
+    .btn-next:active, .btn-submit:active { transform: scale(0.98); }
+    /* Ensure all buttons are easily tappable */
+    .btn, .btn-gold, .btn-outline, .nav-pill, 
+    .ai-toggle-btn, .ai-chip, .ai-send,
+    .btn-next, .btn-prev, .btn-submit,
+    .card-cta, .form-submit {
+      min-height: 44px;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+    /* Fix WhatsApp button on mobile */
+    .whatsapp-float {
+      bottom: 5rem !important;
+    }
+    /* Fix AI chatbot window on mobile */
+    .ai-window {
+      width: calc(100vw - 1rem) !important;
+      height: 70vh !important;
+      right: 0.5rem !important;
+      bottom: 5rem !important;
+    }
+    .ai-float {
+      right: 1rem !important;
+      bottom: 1rem !important;
+    }
+  }
+
 </style>
 </head>
 <body>
@@ -708,7 +759,7 @@
       <div class="contact-info">
         <div class="contact-line"><span><strong>Location:</strong> Nairobi, Kenya. Lucky Summer</span></div>
         <div class="contact-line"><span><strong>Phone:</strong> +254 100582201 or +254713082563</span></div>
-        <div class="contact-line"><span><strong>Email:</strong> <a href="mailto:hello@lumicore.co.ke">hello@lumicore.co.ke</a></span></div>
+        <div class="contact-line"><span><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#b5ddd0d9d9daf5d9c0d8dcd6dac7d09bd6da9bded0"><span class="__cf_email__" data-cfemail="761e131a1a19361a031b1f15190413581519581d13">[email&#160;protected]</span></a></span></div>
         <div class="contact-line"><span><strong>Response time:</strong> Within 24 hours</span></div>
       </div>
 
@@ -786,7 +837,7 @@
   </ul>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // ── COOKIE CONSENT ──
   (function() {
     const choice = localStorage.getItem('lumicore_cookies');
@@ -1014,10 +1065,4 @@ RESPONSE STYLE:
 
   <button class="ai-toggle-btn" onclick="toggleAI()" aria-label="Open AI Assistant">
     <div class="ai-badge" id="aiBadge">1</div>
-    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
-    <div class="ai-tooltip">LumiCore AI Assistant</div>
-  </button>
-</div>
-
-</body>
-</html>
+    <
