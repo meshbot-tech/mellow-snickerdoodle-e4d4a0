@@ -92,9 +92,12 @@
   html{scroll-behavior:smooth;}
   body{font-family:'Outfit',sans-serif;background:var(--surface);color:var(--ink);overflow-x:hidden;}
 
-  /* CURSOR */
+  /* CURSOR — desktop only */
   .cursor{width:8px;height:8px;background:var(--gold);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);}
   .cursor-ring{width:32px;height:32px;border:1px solid var(--gold);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);opacity:0.4;transition:left 0.1s,top 0.1s;}
+  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
+    .cursor, .cursor-ring { display: none !important; pointer-events: none !important; }
+  }
 
   /* NAV */
   nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.6rem 5rem;display:flex;justify-content:space-between;align-items:center;transition:background 0.4s,padding 0.4s;}
@@ -141,6 +144,9 @@
   .btn{display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;font-family:'Outfit',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.25s;cursor:pointer;border:none;}
   .btn-gold{background:var(--gold);color:var(--deep);padding:0.9rem 2rem;border-radius:3px;}
   .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 30px rgba(198,169,107,0.28);}
+  .card-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(198,169,107,0.2);}
+  .cta-outline:hover{background:var(--gold);color:var(--deep);}
+  .cta-filled:hover{background:var(--gold-lt);}
   .btn-outline{color:rgba(255,255,255,0.65);padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.2);border-radius:0;background:transparent;}
   .btn-outline .arrow{transition:transform 0.25s;display:inline-block;}
   .btn-outline:hover{color:var(--gold-lt);border-color:var(--gold);}
@@ -402,55 +408,74 @@
 
 
   /* ── MOBILE TOUCH FIX ── */
-  @media (hover: none) and (pointer: coarse) {
+  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+    /* Make ALL buttons tappable and linked */
+    a, button,
+    .btn, .btn-gold, .btn-outline, .nav-pill,
+    .card-cta, .cta-outline, .cta-filled,
+    .form-submit, .btn-next, .btn-prev, .btn-submit,
+    .ai-toggle-btn, .ai-chip, .ai-send,
+    .social-link, .choice-card,
+    .wa-float, .cookie-btn {
+      min-height: 44px;
+      min-width: 44px;
+      cursor: pointer !important;
+      touch-action: manipulation !important;
+      -webkit-tap-highlight-color: rgba(198,169,107,0.15);
+      pointer-events: auto !important;
+    }
+
+    /* Remove hover states that block taps on mobile */
     .btn-gold:hover, .btn-outline:hover,
-    .btn-gold:active, .btn-outline:active {
+    .nav-pill:hover, .card-cta:hover,
+    .service-card:hover, .testi-card:hover,
+    .step:hover, .social-link:hover,
+    .ai-toggle-btn:hover, .ai-send:hover,
+    .btn-next:hover, .btn-submit:hover,
+    .btn-prev:hover, .process-step:hover {
       transform: none !important;
       box-shadow: none !important;
     }
-    .btn-gold { -webkit-tap-highlight-color: rgba(198,169,107,0.3); }
+
+    /* Active/tap feedback */
+    .btn-gold:active { opacity: 0.85; transform: scale(0.98) !important; }
+    .btn-outline:active { opacity: 0.85; }
     .nav-pill:active { background: var(--gold-lt) !important; }
-    .service-card:hover { transform: none; box-shadow: none; }
-    .service-card:active { transform: translateY(-2px); }
-    .testi-card:hover { transform: none; box-shadow: none; }
-    .testi-card:active { transform: translateY(-2px); }
-    .social-link:hover { transform: none; background: none; }
-    .social-link:active { background: rgba(198,169,107,0.1); }
-    .ai-toggle-btn:hover { transform: none; }
-    .ai-toggle-btn:active { transform: scale(0.96); }
-    .ai-chip:hover { background: rgba(198,169,107,0.1); }
-    .ai-chip:active { background: rgba(198,169,107,0.2); }
-    .ai-send:hover { transform: none; }
-    .ai-send:active { transform: scale(0.95); }
-    .choice-card:hover { border-color: rgba(198,169,107,0.3); background: rgba(198,169,107,0.04); }
-    .btn-next:hover, .btn-prev:hover, .btn-submit:hover { transform: none; box-shadow: none; }
-    .btn-next:active, .btn-submit:active { transform: scale(0.98); }
-    /* Ensure all buttons are easily tappable */
-    .btn, .btn-gold, .btn-outline, .nav-pill, 
-    .ai-toggle-btn, .ai-chip, .ai-send,
-    .btn-next, .btn-prev, .btn-submit,
-    .card-cta, .form-submit {
-      min-height: 44px;
-      cursor: pointer;
-      touch-action: manipulation;
-    }
-    /* Fix WhatsApp button on mobile */
-    .whatsapp-float {
-      bottom: 5rem !important;
-    }
-    /* Fix AI chatbot window on mobile */
+    .card-cta:active { opacity: 0.8; }
+    .ai-toggle-btn:active { transform: scale(0.95) !important; }
+    .ai-chip:active { background: rgba(198,169,107,0.25) !important; }
+    .ai-send:active { transform: scale(0.92) !important; }
+    .choice-card:active { border-color: var(--gold) !important; }
+    .btn-next:active, .btn-submit:active { transform: scale(0.97) !important; }
+    .social-link:active { background: rgba(198,169,107,0.15) !important; }
+
+    /* Fix nav on mobile */
+    .nav-links { display: none !important; }
+
+    /* Fix AI chatbot on mobile */
     .ai-window {
       width: calc(100vw - 1rem) !important;
       height: 70vh !important;
       right: 0.5rem !important;
-      bottom: 5rem !important;
     }
     .ai-float {
       right: 1rem !important;
       bottom: 1rem !important;
     }
-  }
 
+    /* Fix WhatsApp button position */
+    .wa-float {
+      bottom: 5rem !important;
+      left: 1rem !important;
+    }
+
+    /* Ensure links are always clickable */
+    a[href] {
+      pointer-events: auto !important;
+      cursor: pointer !important;
+    }
+  }
 </style>
 </head>
 <body>
@@ -833,6 +858,8 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#who">About</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="inquiry.html">Start a Project</a></li>
     <li><a href="privacy-policy.html">Privacy Policy</a></li>
   </ul>
 </footer>
@@ -855,7 +882,7 @@
   }
 
   function loadGoogleAnalytics() {
-    const GA_ID = 'G-XXXXXXXX'; // ← Replace with your real GA4 ID
+    const GA_ID = 'G-EHZ14LM2HV';
     const script = document.createElement('script');
     script.async = true;
     script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
@@ -870,11 +897,13 @@
   // Custom cursor
   const cursor = document.getElementById('cursor');
   const ring   = document.getElementById('cursorRing');
-  document.addEventListener('mousemove', e => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top  = e.clientY + 'px';
-    setTimeout(() => { ring.style.left = e.clientX + 'px'; ring.style.top = e.clientY + 'px'; }, 80);
-  });
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      setTimeout(() => { ring.style.left = e.clientX + 'px'; ring.style.top = e.clientY + 'px'; }, 80);
+    });
+  }
 
   // Nav scroll
   const nav = document.getElementById('nav');
