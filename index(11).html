@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── PRIMARY SEO ── -->
+<title>LumiCore | Digital Consultancy Nairobi — CRM, Web Design, SEO & Branding Kenya</title>
+<meta name="description" content="LumiCore is a strategy-led digital consultancy in Nairobi, Kenya. We help startups and growing businesses with CRM optimization, web design, SEO, branding, digital marketing, and content strategy. Get a free discovery call today.">
+<meta name="keywords" content="digital consultancy Nairobi, CRM optimization Kenya, web design Nairobi, SEO services Kenya, branding Nairobi, digital marketing Kenya, content strategy Nairobi, HubSpot consultant Kenya, business growth Kenya, LumiCore">
+<meta name="author" content="LumiCore">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://lumicore.co.ke/">
+
+<!-- ── GEO TARGETING ── -->
+<meta name="geo.region" content="KE-30">
+<meta name="geo.placename" content="Nairobi, Kenya">
+<meta name="geo.position" content="-1.286389;36.817223">
+<meta name="ICBM" content="-1.286389, 36.817223">
+
+<!-- ── OPEN GRAPH ── -->
+<meta property="og:title" content="LumiCore | Strategy-Led Digital Consultancy Nairobi, Kenya">
+<meta property="og:description" content="We help startups and growing businesses simplify complexity and scale with confidence — through CRM, web design, SEO, branding, digital marketing, and content strategy that work as one ecosystem.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lumicore.co.ke/">
+<meta property="og:site_name" content="LumiCore">
+<meta property="og:locale" content="en_KE">
+<!-- <meta property="og:image" content="https://lumicore.co.ke/og-image.jpg"> -->
+<!-- <meta property="og:image:width" content="1200"> -->
+<!-- <meta property="og:image:height" content="630"> -->
+
+<!-- ── TWITTER/X CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LumiCore | Digital Consultancy Nairobi, Kenya">
+<meta name="twitter:description" content="Clarity. Systems. Growth. We help businesses build scalable digital ecosystems — CRM, web, SEO, branding, marketing & content.">
+<meta name="twitter:site" content="@lumicore">
+<!-- <meta name="twitter:image" content="https://lumicore.co.ke/og-image.jpg"> -->
+
+<!-- ── THEME ── -->
+<meta name="theme-color" content="#111420">
+<meta name="msapplication-TileColor" content="#111420">
+
+<!-- ── STRUCTURED DATA ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "LumiCore",
+  "description": "Strategy-led digital consultancy helping startups and growing businesses build scalable digital ecosystems through CRM, web design, SEO, branding, digital marketing, and content strategy.",
+  "url": "https://lumicore.co.ke",
+  "logo": "https://lumicore.co.ke/lumicore_img.png",
+  "image": "https://lumicore.co.ke/lumicore_img.png",
+  "telephone": "+254713082563",
+  "email": "hello@lumicore.co.ke",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lucky Summer",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -1.286389,
+    "longitude": 36.817223
+  },
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "priceRange": "$$",
+  "areaServed": ["Nairobi", "Kenya", "East Africa"],
+  "serviceType": [
+    "CRM Consultation and Optimization",
+    "Web Design and Development",
+    "Search Engine Optimization",
+    "Branding and Visual Identity",
+    "Digital Marketing Strategy",
+    "Copywriting and Content Strategy"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/emmeshack"
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#0b0c10;--deep:#111420;--surface:#f7f6f2;--warm:#eeebe2;
+    --gold:#c6a96b;--gold-lt:#e4d4ad;--gold-dk:#8c6f3a;
+    --teal:#1a3a3a;--teal-mid:#2a5252;--teal-lt:#3d7070;
+    --text-muted:#5a5f6e;--border:rgba(198,169,107,0.25);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Outfit',sans-serif;background:var(--surface);color:var(--ink);overflow-x:hidden;}
+
+  /* CURSOR — desktop only */
+  .cursor{width:8px;height:8px;background:var(--gold);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);}
+  .cursor-ring{width:32px;height:32px;border:1px solid var(--gold);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);opacity:0.4;transition:left 0.1s,top 0.1s;}
+  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
+    .cursor, .cursor-ring { display: none !important; pointer-events: none !important; }
+  }
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.6rem 5rem;display:flex;justify-content:space-between;align-items:center;transition:background 0.4s,padding 0.4s;}
+  nav.scrolled{padding:1rem 5rem;background:rgba(11,12,16,0.93);backdrop-filter:blur(14px);}
+  .logo{font-family:'Playfair Display',serif;font-size:1.65rem;font-weight:700;letter-spacing:0.04em;color:#fff;text-decoration:none;}
+  .logo span{color:var(--gold);}
+  .nav-links{display:flex;gap:2.4rem;list-style:none;align-items:center;}
+  .nav-links a{text-decoration:none;font-size:0.78rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);transition:color 0.25s;}
+  .nav-links a:hover{color:var(--gold-lt);}
+  .nav-pill{background:var(--gold)!important;color:var(--deep)!important;padding:0.55rem 1.5rem!important;border-radius:100px!important;font-weight:600!important;}
+  .nav-pill:hover{background:var(--gold-lt)!important;}
+
+  /* FLOATING WHATSAPP */
+  .wa-float{position:fixed;left:1.8rem;bottom:2rem;z-index:500;}
+  .wa-float-btn{width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.45);transition:transform 0.25s,box-shadow 0.25s;position:relative;}
+  .wa-float-btn:hover{transform:translateY(-4px) scale(1.06);box-shadow:0 10px 30px rgba(37,211,102,0.5);}
+  .wa-float-btn svg{width:28px;height:28px;fill:#fff;}
+  .wa-float-btn::before{content:'';position:absolute;inset:-6px;border:2px solid rgba(37,211,102,0.4);border-radius:50%;animation:waPulse 2.2s ease-out infinite;}
+  @keyframes waPulse{0%{transform:scale(0.95);opacity:0.7}70%{transform:scale(1.25);opacity:0}100%{transform:scale(1.25);opacity:0}}
+  .wa-tooltip{position:absolute;left:calc(100% + 14px);top:50%;transform:translateY(-50%) translateX(-6px);background:#fff;color:var(--deep);font-size:0.78rem;font-weight:600;padding:0.45rem 0.9rem;border-radius:6px;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,0.15);opacity:0;pointer-events:none;transition:opacity 0.2s,transform 0.2s;}
+  .wa-tooltip::before{content:'';position:absolute;right:100%;top:50%;transform:translateY(-50%);border:6px solid transparent;border-right-color:#fff;}
+  .wa-float-btn:hover .wa-tooltip{opacity:1;transform:translateY(-50%) translateX(0);}
+
+  /* HERO */
+  .hero{min-height:100vh;background:var(--deep);position:relative;display:flex;align-items:center;overflow:hidden;}
+  .hero-bg{position:absolute;inset:0;overflow:hidden;}
+  .hex{position:absolute;border:1px solid rgba(198,169,107,0.07);border-radius:4px;transform:rotate(45deg);}
+  .hex-1{width:600px;height:600px;top:-200px;right:-200px;}
+  .hex-2{width:400px;height:400px;top:40%;right:15%;border-color:rgba(198,169,107,0.04);}
+  .hex-3{width:200px;height:200px;bottom:15%;right:35%;border-color:rgba(198,169,107,0.12);}
+  .hex-4{width:900px;height:900px;bottom:-400px;left:-300px;border-color:rgba(198,169,107,0.03);}
+  .glow{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;}
+  .glow-1{width:500px;height:500px;top:-100px;right:0;background:rgba(26,58,58,0.55);}
+  .glow-2{width:300px;height:300px;bottom:10%;left:30%;background:rgba(198,169,107,0.06);}
+  .hero-inner{position:relative;z-index:2;max-width:1300px;margin:0 auto;padding:0 5rem;display:grid;grid-template-columns:1.1fr 0.9fr;gap:6rem;align-items:center;width:100%;}
+  .hero-tag{display:inline-flex;align-items:center;gap:0.7rem;background:rgba(198,169,107,0.1);border:1px solid var(--border);border-radius:100px;padding:0.4rem 1rem 0.4rem 0.5rem;margin-bottom:2rem;opacity:0;animation:riseIn 0.7s 0.2s forwards;}
+  .tag-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.4;transform:scale(1.6)}}
+  .tag-text{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold-lt);font-weight:500;}
+  .hero-h1{font-family:'Playfair Display',serif;font-size:clamp(3.2rem,5vw,5.2rem);font-weight:700;line-height:1.05;color:#fff;margin-bottom:1.8rem;opacity:0;animation:riseIn 0.8s 0.4s forwards;}
+  .hero-h1 .accent{color:var(--gold);font-style:italic;display:block;}
+  .hero-p{font-size:1rem;line-height:1.85;color:rgba(255,255,255,0.55);max-width:480px;margin-bottom:3rem;opacity:0;animation:riseIn 0.8s 0.6s forwards;}
+  .hero-actions{display:flex;gap:1.2rem;align-items:center;opacity:0;animation:riseIn 0.8s 0.8s forwards;}
+  .btn{display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;font-family:'Outfit',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.25s;cursor:pointer;border:none;}
+  .btn-gold{background:var(--gold);color:var(--deep);padding:0.9rem 2rem;border-radius:3px;}
+  .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 30px rgba(198,169,107,0.28);}
+  .card-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(198,169,107,0.2);}
+  .cta-outline:hover{background:var(--gold);color:var(--deep);}
+  .cta-filled:hover{background:var(--gold-lt);}
+  .btn-outline{color:rgba(255,255,255,0.65);padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.2);border-radius:0;background:transparent;}
+  .btn-outline .arrow{transition:transform 0.25s;display:inline-block;}
+  .btn-outline:hover{color:var(--gold-lt);border-color:var(--gold);}
+  .btn-outline:hover .arrow{transform:translateX(6px);}
+  .hero-panel{opacity:0;animation:riseIn 1s 0.9s forwards;}
+  .intersection-card{background:rgba(255,255,255,0.03);border:1px solid rgba(198,169,107,0.15);border-radius:8px;padding:2.5rem;position:relative;overflow:hidden;}
+  .intersection-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+  .intersection-title{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;font-weight:600;}
+  .venn{position:relative;height:180px;margin-bottom:2rem;}
+  .venn-circle{position:absolute;width:120px;height:120px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;}
+  .vc-clarity{background:rgba(26,58,58,0.8);border:1px solid rgba(61,112,112,0.5);color:#a0d4d4;top:0;left:0;}
+  .vc-systems{background:rgba(26,58,58,0.6);border:1px solid rgba(198,169,107,0.3);color:var(--gold-lt);top:0;right:0;}
+  .vc-growth{background:rgba(20,20,30,0.8);border:1px solid rgba(198,169,107,0.2);color:rgba(255,255,255,0.55);bottom:0;left:50%;transform:translateX(-50%);}
+  .venn-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-35%);width:52px;height:52px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:10;}
+  .venn-center span{font-family:'Playfair Display',serif;font-size:0.62rem;font-weight:700;color:var(--deep);text-align:center;line-height:1.2;}
+  .audience-chips{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.2rem;}
+  .chip{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:100px;padding:0.3rem 0.85rem;font-size:0.73rem;color:rgba(255,255,255,0.5);}
+  .chip.active{background:rgba(198,169,107,0.12);border-color:var(--border);color:var(--gold-lt);}
+  .scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:0.5rem;opacity:0;animation:riseIn 1s 1.4s forwards;}
+  .scroll-hint span{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.25);}
+  .scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--gold),transparent);animation:lineDown 2s 1.5s infinite;}
+  @keyframes lineDown{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* TICKER */
+  .ticker{background:var(--teal);padding:0.95rem 0;overflow:hidden;}
+  .ticker-track{display:flex;white-space:nowrap;animation:tickerScroll 38s linear infinite;}
+  .ticker-track:hover{animation-play-state:paused;}
+  .ticker-item{display:inline-flex;align-items:center;gap:2.5rem;padding-right:2.5rem;font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45);}
+  .ticker-item::after{content:'✦';color:var(--gold);font-size:0.5rem;}
+  @keyframes tickerScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* SERVICES */
+  .services{padding:9rem 5rem;max-width:1300px;margin:0 auto;}
+  .section-eyebrow{font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold-dk);font-weight:600;margin-bottom:1rem;}
+  .section-h2{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,3.5vw,3.5rem);font-weight:700;line-height:1.1;color:var(--deep);}
+  .section-h2 em{font-style:italic;color:var(--teal-mid);}
+  .services-intro{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:end;margin-bottom:4.5rem;}
+  .services-sub{font-size:1rem;line-height:1.8;color:var(--text-muted);align-self:end;}
+  .services-list{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--gold-lt);}
+  .svc{padding:2.8rem 3rem;border-right:1px solid var(--gold-lt);border-bottom:1px solid var(--gold-lt);position:relative;cursor:default;transition:background 0.35s;overflow:hidden;}
+  .svc:nth-child(even){border-right:none;}
+  .svc:nth-last-child(-n+2){border-bottom:none;}
+  .svc::after{content:'';position:absolute;inset:0;background:var(--deep);transform:translateY(102%);transition:transform 0.42s cubic-bezier(0.16,1,0.3,1);z-index:0;}
+  .svc:hover::after{transform:translateY(0);}
+  .svc>*{position:relative;z-index:1;}
+  .svc-num{position:absolute;top:2rem;right:2.5rem;font-family:'Playfair Display',serif;font-size:4rem;font-weight:700;color:var(--warm);line-height:1;transition:color 0.35s;}
+  .svc:hover .svc-num{color:rgba(255,255,255,0.05);}
+  .svc-icon{font-size:1.7rem;margin-bottom:1.4rem;display:block;transition:transform 0.3s;}
+  .svc:hover .svc-icon{transform:scale(1.1);}
+  .svc-name{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--deep);margin-bottom:0.8rem;transition:color 0.35s;}
+  .svc:hover .svc-name{color:#fff;}
+  .svc-desc{font-size:0.88rem;line-height:1.75;color:var(--text-muted);transition:color 0.35s;}
+  .svc:hover .svc-desc{color:rgba(255,255,255,0.55);}
+  .svc-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:1.2rem;}
+  .svc-tag{font-size:0.67rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal-lt);background:rgba(26,58,58,0.08);padding:0.2rem 0.6rem;border-radius:2px;transition:background 0.35s,color 0.35s;}
+  .svc:hover .svc-tag{background:rgba(198,169,107,0.15);color:var(--gold-lt);}
+
+  /* WHO */
+  .who{background:var(--deep);padding:8rem 5rem;position:relative;overflow:hidden;}
+  .who::before{content:'';position:absolute;top:0;right:0;width:50%;height:100%;background:linear-gradient(135deg,transparent 0%,rgba(26,58,58,0.35) 100%);}
+  .who-inner{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;position:relative;z-index:1;}
+  .who .section-eyebrow{color:var(--gold);}
+  .who .section-h2{color:#fff;}
+  .who .section-h2 em{color:var(--gold);}
+  .who-body{font-size:1rem;line-height:1.8;color:rgba(255,255,255,0.5);margin:1.5rem 0 3rem;}
+  .client-types{display:flex;flex-direction:column;gap:1rem;}
+  .client-type{display:flex;align-items:center;gap:1.2rem;padding:1.2rem 1.5rem;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:4px;transition:border-color 0.3s,background 0.3s;cursor:default;}
+  .client-type:hover{border-color:var(--border);background:rgba(198,169,107,0.05);}
+  .ct-icon{width:42px;height:42px;background:rgba(198,169,107,0.1);border:1px solid var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+  .ct-name{font-weight:600;font-size:0.9rem;color:#fff;margin-bottom:0.2rem;}
+  .ct-desc{font-size:0.8rem;color:rgba(255,255,255,0.38);line-height:1.5;}
+  .differentiators{display:flex;flex-direction:column;}
+  .diff{padding:2rem 0;border-bottom:1px solid rgba(255,255,255,0.06);display:grid;grid-template-columns:3rem 1fr;gap:1.5rem;align-items:start;}
+  .diff:first-child{border-top:1px solid rgba(255,255,255,0.06);}
+  .diff-num{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold);opacity:0.45;font-weight:700;line-height:1;margin-top:0.1rem;}
+  .diff-title{font-weight:600;font-size:1rem;color:#fff;margin-bottom:0.4rem;}
+  .diff-body{font-size:0.85rem;line-height:1.7;color:rgba(255,255,255,0.4);}
+
+  /* PROCESS */
+  .process{padding:9rem 5rem;background:var(--warm);}
+  .process-inner{max-width:1300px;margin:0 auto;}
+  .process-header{text-align:center;margin-bottom:5rem;}
+  .steps-row{display:grid;grid-template-columns:repeat(4,1fr);position:relative;}
+  .steps-row::before{content:'';position:absolute;top:1.45rem;left:calc(12.5% + 1.5rem);right:calc(12.5% + 1.5rem);height:1px;background:linear-gradient(90deg,var(--gold-lt),var(--gold),var(--gold-lt));z-index:0;}
+  .step{padding:0 2rem;text-align:center;position:relative;z-index:1;}
+  .step-bubble{width:48px;height:48px;border-radius:50%;background:var(--deep);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 1.8rem;font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);position:relative;z-index:2;transition:background 0.3s,color 0.3s,transform 0.3s;cursor:default;}
+  .step:hover .step-bubble{background:var(--gold);color:var(--deep);transform:scale(1.1);}
+  .step-name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--deep);margin-bottom:0.7rem;}
+  .step-body{font-size:0.85rem;line-height:1.7;color:var(--text-muted);}
+
+  /* TESTIMONIAL */
+  .testimonial{padding:8rem 5rem;background:var(--surface);overflow:hidden;}
+  .testimonial-header{text-align:center;margin-bottom:4rem;}
+  .testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;max-width:1100px;margin:0 auto;}
+  .testi-card{background:#fff;border:1px solid rgba(198,169,107,0.18);border-radius:8px;padding:2.5rem;position:relative;transition:box-shadow 0.3s,transform 0.3s;cursor:default;}
+  .testi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-lt));border-radius:8px 8px 0 0;opacity:0;transition:opacity 0.3s;}
+  .testi-card:hover{box-shadow:0 12px 40px rgba(198,169,107,0.12);transform:translateY(-4px);}
+  .testi-card:hover::before{opacity:1;}
+  .testi-card.featured{grid-column:span 2;background:var(--deep);}
+  .testi-card.featured .testi-quote{color:rgba(255,255,255,0.85);}
+  .testi-card.featured .testi-name{color:#fff;}
+  .testi-card.featured .testi-role{color:var(--gold-lt);}
+  .testi-card.featured .testi-service{background:rgba(198,169,107,0.12);color:var(--gold-lt);}
+  .stars{color:var(--gold);font-size:0.85rem;letter-spacing:0.15rem;margin-bottom:1.5rem;display:block;}
+  .testi-quote{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;font-weight:400;line-height:1.7;color:var(--deep);margin-bottom:1.8rem;}
+  .testi-featured-quote{font-size:clamp(1.2rem,2vw,1.55rem);}
+  .testi-meta{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+  .testi-name{font-weight:700;font-size:0.92rem;color:var(--deep);margin-bottom:0.15rem;}
+  .testi-role{font-size:0.78rem;color:var(--text-muted);letter-spacing:0.06em;}
+  .testi-service{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-lt);background:rgba(26,58,58,0.07);padding:0.25rem 0.7rem;border-radius:100px;white-space:nowrap;}
+  .divider{display:inline-block;width:36px;height:1px;background:var(--gold);vertical-align:middle;margin:0 1rem;}
+  @media(max-width:960px){.testi-grid{grid-template-columns:1fr;}.testi-card.featured{grid-column:span 1;}}
+
+  /* CONTACT */
+  .contact{background:var(--deep);padding:9rem 5rem;position:relative;overflow:hidden;}
+  .contact::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(26,58,58,0.45) 0%,transparent 60%),radial-gradient(ellipse at bottom left,rgba(198,169,107,0.05) 0%,transparent 50%);}
+  .contact-inner{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:7rem;align-items:start;position:relative;z-index:1;}
+  .contact .section-eyebrow{color:var(--gold);}
+  .contact .section-h2{color:#fff;margin-bottom:1.5rem;}
+  .contact .section-h2 em{color:var(--gold);}
+  .contact-body{font-size:1rem;line-height:1.8;color:rgba(255,255,255,0.48);margin-bottom:2rem;}
+  .contact-info{display:flex;flex-direction:column;gap:1.1rem;}
+  .contact-line{display:flex;align-items:center;gap:1rem;font-size:0.9rem;color:rgba(255,255,255,0.5);}
+  .contact-line strong{color:var(--gold-lt);font-weight:500;}
+  .contact-line a{color:var(--gold-lt);text-decoration:none;}
+  .contact-line a:hover{color:var(--gold);}
+
+  /* SOCIAL ICONS */
+  .social-links{display:flex;gap:0.9rem;margin-top:2rem;}
+  .social-link{width:42px;height:42px;border:1px solid rgba(198,169,107,0.25);border-radius:6px;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:background 0.25s,border-color 0.25s,transform 0.2s;}
+  .social-link:hover{background:rgba(198,169,107,0.1);border-color:var(--gold);transform:translateY(-3px);}
+  .social-link svg{width:18px;height:18px;fill:rgba(255,255,255,0.6);transition:fill 0.25s;}
+  .social-link:hover svg{fill:var(--gold-lt);}
+
+  .form{display:flex;flex-direction:column;gap:1.4rem;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:6px;padding:3rem;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;}
+  .field{display:flex;flex-direction:column;gap:0.4rem;}
+  .field label{font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.38);font-weight:500;}
+  .field input,.field select,.field textarea{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:3px;padding:0.85rem 1rem;font-family:'Outfit',sans-serif;font-size:0.92rem;color:#fff;outline:none;transition:border-color 0.25s,background 0.25s;resize:none;}
+  .field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,0.2);}
+  .field select option{background:var(--deep);color:#fff;}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);background:rgba(198,169,107,0.04);}
+  .form-submit{background:var(--gold);color:var(--deep);border:none;padding:1rem 2.5rem;font-family:'Outfit',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border-radius:3px;transition:background 0.25s,transform 0.2s,box-shadow 0.2s;align-self:flex-start;}
+  .form-submit:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 30px rgba(198,169,107,0.22);}
+  .form-success{display:none;color:var(--gold-lt);font-size:0.88rem;padding:0.3rem 0;}
+
+  /* FOOTER */
+  footer{background:#070809;padding:3.5rem 5rem;display:flex;justify-content:space-between;align-items:center;gap:2rem;}
+  .footer-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff;}
+  .footer-logo span{color:var(--gold);}
+  .footer-center{font-size:0.75rem;color:rgba(255,255,255,0.22);text-align:center;line-height:1.7;}
+  .footer-links{display:flex;gap:2rem;list-style:none;}
+  .footer-links a{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,0.28);transition:color 0.25s;}
+  .footer-links a:hover{color:var(--gold);}
+
+  /* ANIMATIONS */
+  @keyframes riseIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{opacity:1;transform:translateY(0);transition:opacity 0.7s,transform 0.7s;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* COOKIE BANNER */
+  .cookie-banner{position:fixed;bottom:0;left:0;right:0;z-index:9000;background:rgba(11,12,16,0.97);backdrop-filter:blur(12px);border-top:1px solid rgba(198,169,107,0.2);padding:1.4rem 5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;transform:translateY(100%);transition:transform 0.4s cubic-bezier(0.16,1,0.3,1);}
+  .cookie-banner.show{transform:translateY(0);}
+  .cookie-text{font-size:0.85rem;line-height:1.6;color:rgba(255,255,255,0.6);max-width:680px;}
+  .cookie-text a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(198,169,107,0.3);}
+  .cookie-text a:hover{color:var(--gold-lt);}
+  .cookie-text strong{color:#fff;font-weight:600;}
+  .cookie-actions{display:flex;gap:0.8rem;flex-shrink:0;align-items:center;}
+  .cookie-btn{padding:0.6rem 1.4rem;border-radius:3px;font-family:'Outfit',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border:none;transition:all 0.2s;white-space:nowrap;}
+  .cookie-btn-accept{background:var(--gold);color:var(--deep);}
+  .cookie-btn-accept:hover{background:var(--gold-lt);transform:translateY(-1px);}
+  .cookie-btn-essential{background:transparent;color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.15);}
+  .cookie-btn-essential:hover{border-color:rgba(255,255,255,0.4);color:#fff;}
+
+  /* RESPONSIVE */
+  @media(max-width:960px){
+    nav,nav.scrolled{padding:1.2rem 2rem;}
+    .nav-links{display:none;}
+    .hero-inner{grid-template-columns:1fr;padding:0 2rem;}
+    .hero-panel{display:none;}
+    .services{padding:6rem 2rem;}
+    .services-intro{grid-template-columns:1fr;gap:2rem;}
+    .services-list{grid-template-columns:1fr;}
+    .svc{border-right:none!important;}
+    .svc:last-child{border-bottom:none;}
+    .who{padding:6rem 2rem;}
+    .who-inner{grid-template-columns:1fr;}
+    .process{padding:6rem 2rem;}
+    .steps-row{grid-template-columns:1fr 1fr;gap:3rem;}
+    .steps-row::before{display:none;}
+    .testimonial,.contact{padding:5rem 2rem;}
+    .contact-inner{grid-template-columns:1fr;}
+    footer{flex-direction:column;text-align:center;padding:2.5rem 2rem;}
+    .form{padding:2rem;}
+    .form-row{grid-template-columns:1fr;}
+    .cookie-banner{flex-direction:column;padding:1.5rem;align-items:flex-start;}
+    .cookie-actions{width:100%;}
+    .cookie-btn{flex:1;text-align:center;}
+  }
+
+  /* ── MOBILE TOUCH FIX ── */
+  @media (max-width: 768px), (hover: none) and (pointer: coarse) {
+
+    /* Make ALL buttons tappable and linked */
+    a, button,
+    .btn, .btn-gold, .btn-outline, .nav-pill,
+    .card-cta, .cta-outline, .cta-filled,
+    .form-submit, .btn-next, .btn-prev, .btn-submit,
+    .ai-toggle-btn, .ai-chip, .ai-send,
+    .social-link, .choice-card,
+    .wa-float, .cookie-btn {
+      min-height: 44px;
+      min-width: 44px;
+      cursor: pointer !important;
+      touch-action: manipulation !important;
+      -webkit-tap-highlight-color: rgba(198,169,107,0.15);
+      pointer-events: auto !important;
+    }
+
+    /* Remove hover states that block taps on mobile */
+    .btn-gold:hover, .btn-outline:hover,
+    .nav-pill:hover, .card-cta:hover,
+    .service-card:hover, .testi-card:hover,
+    .step:hover, .social-link:hover,
+    .ai-toggle-btn:hover, .ai-send:hover,
+    .btn-next:hover, .btn-submit:hover,
+    .btn-prev:hover, .process-step:hover {
+      transform: none !important;
+      box-shadow: none !important;
+    }
+
+    /* Active/tap feedback */
+    .btn-gold:active { opacity: 0.85; transform: scale(0.98) !important; }
+    .btn-outline:active { opacity: 0.85; }
+    .nav-pill:active { background: var(--gold-lt) !important; }
+    .card-cta:active { opacity: 0.8; }
+    .ai-toggle-btn:active { transform: scale(0.95) !important; }
+    .ai-chip:active { background: rgba(198,169,107,0.25) !important; }
+    .ai-send:active { transform: scale(0.92) !important; }
+    .choice-card:active { border-color: var(--gold) !important; }
+    .btn-next:active, .btn-submit:active { transform: scale(0.97) !important; }
+    .social-link:active { background: rgba(198,169,107,0.15) !important; }
+
+    /* Fix nav on mobile */
+    .nav-links { display: none !important; }
+
+    /* Fix AI chatbot on mobile */
+    /* Fix WhatsApp button position */
+    .wa-float {
+      bottom: 5rem !important;
+      left: 1rem !important;
+    }
+
+    /* Ensure links are always clickable */
+    a[href] {
+      pointer-events: auto !important;
+      cursor: pointer !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <p class="cookie-text">
+    <strong>We use cookies</strong> to improve your experience and understand how our website is used.
+    Analytics cookies help us see which pages are most useful. You can accept all cookies or choose
+    essential cookies only. Read our <a href="privacy-policy.html">Privacy Policy</a> to learn more.
+  </p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-essential" onclick="setCookieChoice('essential')">Essential Only</button>
+    <button class="cookie-btn cookie-btn-accept" onclick="setCookieChoice('all')">Accept All Cookies</button>
+  </div>
+</div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- FLOATING WHATSAPP -->
+<div class="wa-float">
+  <a href="https://wa.me/+254713082563" target="_blank" rel="noopener" class="wa-float-btn wa-link" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.528 5.855L.057 23.886a.5.5 0 00.606.63l6.264-1.643A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.034-1.386l-.36-.214-3.733.979.996-3.638-.234-.374A9.818 9.818 0 1112 21.818z"/>
+    </svg>
+    <div class="wa-tooltip">Talk to an Expert</div>
+  </a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="logo">Lumi<span>Core</span></a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="casestudies.html">Case Studies</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="inquiry.html" class="nav-pill">Start a Project</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hex hex-1"></div><div class="hex hex-2"></div>
+    <div class="hex hex-3"></div><div class="hex hex-4"></div>
+    <div class="glow glow-1"></div><div class="glow glow-2"></div>
+  </div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-tag"><div class="tag-dot"></div><span class="tag-text">Strategy-Led Digital Consultancy</span></div>
+      <h1 class="hero-h1">Simplify complexity.<br><span class="accent">Scale with confidence.</span></h1>
+      <p class="hero-p">LumiCore partners with startups, growing businesses, and organizations to build scalable digital ecosystems — where CRM, web, SEO, brand, marketing, and content all work as one.</p>
+      <div class="hero-actions">
+        <a href="inquiry.html" target="_blank" rel="noopener" class="btn btn-gold">Start a Project <span>→</span></a>
+        <a href="#services" class="btn btn-outline">Our Services <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="intersection-card">
+        <div class="intersection-title">Where LumiCore Operates</div>
+        <div class="venn">
+          <div class="venn-circle vc-clarity">Clarity</div>
+          <div class="venn-circle vc-systems">Systems</div>
+          <div class="venn-circle vc-growth">Growth</div>
+          <div class="venn-center"><span>Lumi<br>Core</span></div>
+        </div>
+        <p style="font-size:0.8rem;color:rgba(255,255,255,0.38);line-height:1.6;margin-bottom:1.2rem;">Our work lives at the intersection of clarity, systems, and growth — where strategy meets execution.</p>
+        <div style="font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:0.8rem;">We partner with</div>
+        <div class="audience-chips">
+          <span class="chip active">Startups</span>
+          <span class="chip active">Growing Businesses</span>
+          <span class="chip active">Organizations</span>
+          <span class="chip">B2B</span><span class="chip">B2C</span><span class="chip">Non-Profits</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">CRM Consultation & Optimization</span>
+    <span class="ticker-item">Web Design & Development</span>
+    <span class="ticker-item">Search Engine Optimization</span>
+    <span class="ticker-item">Branding & Visual Identity</span>
+    <span class="ticker-item">Digital Marketing Strategy</span>
+    <span class="ticker-item">Copywriting & Content Strategy</span>
+    <span class="ticker-item">Scalable Digital Ecosystems</span>
+    <span class="ticker-item">CRM Consultation & Optimization</span>
+    <span class="ticker-item">Web Design & Development</span>
+    <span class="ticker-item">Search Engine Optimization</span>
+    <span class="ticker-item">Branding & Visual Identity</span>
+    <span class="ticker-item">Digital Marketing Strategy</span>
+    <span class="ticker-item">Copywriting & Content Strategy</span>
+    <span class="ticker-item">Scalable Digital Ecosystems</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="services-intro reveal">
+    <div>
+      <div class="section-eyebrow">What We Do</div>
+      <h2 class="section-h2">Six disciplines.<br><em>One connected strategy.</em></h2>
+    </div>
+    <p class="services-sub">We don't deliver isolated services. Every engagement is designed so your CRM, website, SEO, brand, marketing, and content amplify each other — building a digital ecosystem that compounds.</p>
+  </div>
+  <div class="services-list">
+    <div class="svc reveal">
+      <div class="svc-num">01</div>
+      <span class="svc-icon">🔗</span>
+      <h3 class="svc-name">CRM Consultation & Optimization</h3>
+      <p class="svc-desc">We help businesses select, implement, audit, configure, and optimize your CRM so your team spends less time managing tools and more time building relationships. From HubSpot to Salesforce, we make your system work the way your business does.</p>
+      <div class="svc-tags"><span class="svc-tag">HubSpot</span><span class="svc-tag">Monday.com</span><span class="svc-tag">ClickUp</span><span class="svc-tag">Salesforce</span><span class="svc-tag">Automation</span><span class="svc-tag">Pipeline Design</span></div>
+    </div>
+    <div class="svc reveal">
+      <div class="svc-num">02</div>
+      <span class="svc-icon">⬡</span>
+      <h3 class="svc-name">Web Design & Development</h3>
+      <p class="svc-desc">Purpose-built websites that convert visitors into customers. We design and develop digital experiences that reflect your brand, serve your audience, and scale as your business grows — built for performance from the ground up.</p>
+      <div class="svc-tags"><span class="svc-tag">Website Management</span><span class="svc-tag">WordPress</span><span class="svc-tag">UX/UI</span><span class="svc-tag">Website optimization</span><span class="svc-tag">Responsive Design</span><span class="svc-tag">Conversion Rate</span></div>
+    </div>
+    <div class="svc reveal">
+      <div class="svc-num">03</div>
+      <span class="svc-icon">◎</span>
+      <h3 class="svc-name">Search Engine Optimization</h3>
+      <p class="svc-desc">We help businesses increase visibility, authority, and organic traffic through strategic, ethical SEO practices.</p>
+      <div class="svc-tags"><span class="svc-tag">Technical SEO</span><span class="svc-tag">On-Page</span><span class="svc-tag">Content Architecture</span><span class="svc-tag">SEO Audits</span></div>
+    </div>
+    <div class="svc reveal">
+      <div class="svc-num">04</div>
+      <span class="svc-icon">◈</span>
+      <h3 class="svc-name">Branding & Visual Identity</h3>
+      <p class="svc-desc">Brand clarity before brand beauty. We build identities rooted in strategy — defining your positioning, visual language, and voice to create recognition, trust, and differentiation that lasts.</p>
+      <div class="svc-tags"><span class="svc-tag">Logo & Identity</span><span class="svc-tag">Positioning</span><span class="svc-tag">Brand Guidelines</span><span class="svc-tag">Voice & Tone</span></div>
+    </div>
+    <div class="svc reveal">
+      <div class="svc-num">05</div>
+      <span class="svc-icon">⟁</span>
+      <h3 class="svc-name">Digital Marketing Strategy</h3>
+      <p class="svc-desc">We design digital marketing systems that attract, nurture, and convert customers across multiple channels.</p>
+      <div class="svc-tags"><span class="svc-tag">Social Media Management</span><span class="svc-tag">Digital Campaigns</span><span class="svc-tag">Digital Advertising</span><span class="svc-tag">Email Marketing</span><span class="svc-tag">Funnels</span><span class="svc-tag">Analytics</span></div>
+    </div>
+    <div class="svc reveal">
+      <div class="svc-num">06</div>
+      <span class="svc-icon">✦</span>
+      <h3 class="svc-name">Copywriting & Content Strategy</h3>
+      <p class="svc-desc">Words that work as hard as your strategy. We craft messaging frameworks, website copy, editorial plans, and content that communicates your value clearly and moves audiences to act.</p>
+      <div class="svc-tags"><span class="svc-tag">Landing Page Copy</span><span class="svc-tag">Website Copy</span><span class="svc-tag">Content Plans</span><span class="svc-tag">Messaging</span><span class="svc-tag">Thought Leadership</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section class="who" id="who">
+  <div class="who-inner">
+    <div class="reveal">
+      <div class="section-eyebrow">Who We Serve</div>
+      <h2 class="section-h2">Built for businesses<br><em>ready to grow.</em></h2>
+      <p class="who-body">We partner with ambitious teams who want to simplify complexity and build digital ecosystems that scale — not just check boxes. If your business is growing and your digital presence needs to keep up, we're built for you.</p>
+      <div class="client-types">
+        <div class="client-type">
+          <div class="ct-icon">🚀</div>
+          <div><div class="ct-name">Startups</div><div class="ct-desc">Get the brand presence, systems, and digital foundation to compete from day one.</div></div>
+        </div>
+        <div class="client-type">
+          <div class="ct-icon">📈</div>
+          <div><div class="ct-name">Growing Businesses</div><div class="ct-desc">Break through plateaus with connected strategy and infrastructure built for your next stage.</div></div>
+        </div>
+        <div class="client-type">
+          <div class="ct-icon">🏛️</div>
+          <div><div class="ct-name">Organizations & Non-Profits</div><div class="ct-desc">Communicate your mission clearly and operate more effectively in a digital-first world.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="differentiators reveal">
+      <div class="section-eyebrow" style="color:var(--gold);margin-bottom:2rem;">Why LumiCore</div>
+      <div class="diff">
+        <div class="diff-num">01</div>
+        <div><div class="diff-title">Strategy Before Execution</div><div class="diff-body">We diagnose before we prescribe. Every recommendation is grounded in your business reality, not a one-size-fits-all playbook.</div></div>
+      </div>
+      <div class="diff">
+        <div class="diff-num">02</div>
+        <div><div class="diff-title">Services That Connect</div><div class="diff-body">Your CRM, website, SEO, brand, and content aren't silos. We design them to work as a single, compounding ecosystem.</div></div>
+      </div>
+      <div class="diff">
+        <div class="diff-num">03</div>
+        <div><div class="diff-title">Built to Scale</div><div class="diff-body">We build infrastructure that grows with you — not solutions you'll outgrow in six months or that break when you add headcount.</div></div>
+      </div>
+      <div class="diff">
+        <div class="diff-num">04</div>
+        <div><div class="diff-title">Clarity at Every Step</div><div class="diff-body">No jargon. No confusion. You'll always know what we're building, why, and what success looks like — before we touch a thing.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="process-inner">
+    <div class="process-header reveal">
+      <div class="section-eyebrow">How It Works</div>
+      <h2 class="section-h2">Our Process</h2>
+      <p style="font-size:1rem;line-height:1.8;color:var(--text-muted);max-width:500px;margin:1rem auto 0;">A clear, repeatable path from where you are to where you want to go.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step reveal">
+        <div class="step-bubble">01</div>
+        <div class="step-name">Discover</div>
+        <div class="step-body">We learn your business deeply — your goals, gaps, audience, and competitive context before touching anything.</div>
+      </div>
+      <div class="step reveal">
+        <div class="step-bubble">02</div>
+        <div class="step-name">Strategize</div>
+        <div class="step-body">We design a connected roadmap across the relevant disciplines — prioritized for your resources and timeline.</div>
+      </div>
+      <div class="step reveal">
+        <div class="step-bubble">03</div>
+        <div class="step-name">Execute</div>
+        <div class="step-body">We build, launch, and optimize — hands-on delivery with transparent communication at every milestone.</div>
+      </div>
+      <div class="step reveal">
+        <div class="step-bubble">04</div>
+        <div class="step-name">Scale</div>
+        <div class="step-body">We hand off a functioning ecosystem with the documentation, training, and frameworks to keep compounding.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="testimonial-header reveal">
+    <div class="section-eyebrow" style="color:var(--gold-dk);">Client Stories</div>
+    <h2 class="section-h2">Trusted by businesses<br><em>across Nairobi.</em></h2>
+  </div>
+  <div class="testi-grid">
+
+    <!-- Featured testimonial -->
+    <div class="testi-card featured reveal">
+      <span class="stars">★★★★★</span>
+      <p class="testi-quote testi-featured-quote">"LumiCore brought our CRM, website, and content strategy together into one cohesive system. For the first time, our whole team is aligned — and our pipeline has never been stronger."</p>
+      <div class="testi-meta">
+        <div>
+          <div class="testi-name">Sylvia Sordo</div>
+          <div class="testi-role">CEO, SOMU Consultants</div>
+        </div>
+        <span class="testi-service">CRM · Web · Content Strategy</span>
+      </div>
+    </div>
+
+    <!-- John McAlloso -->
+    <div class="testi-card reveal">
+      <span class="stars">★★★★★</span>
+      <p class="testi-quote">"Working with LumiCore was a turning point for us. They didn't just build a website — they helped us think clearly about our brand and where we were going. Highly recommend."</p>
+      <div class="testi-meta">
+        <div>
+          <div class="testi-name">John McAlloso</div>
+          <div class="testi-role">Business Owner</div>
+        </div>
+        <span class="testi-service">Branding · Web Design</span>
+      </div>
+    </div>
+
+    <!-- Creative Gizmos -->
+    <div class="testi-card reveal">
+      <span class="stars">★★★★★</span>
+      <p class="testi-quote">"LumiCore understood our creative industry inside out. Our digital presence now actually reflects who we are — and the SEO work has brought in leads we weren't even expecting."</p>
+      <div class="testi-meta">
+        <div>
+          <div class="testi-name">Creative Gizmos</div>
+          <div class="testi-role">Creative Agency, Nairobi</div>
+        </div>
+        <span class="testi-service">SEO · Digital Marketing</span>
+      </div>
+    </div>
+
+    <!-- NSSL -->
+    <div class="testi-card reveal" style="grid-column:1/-1;">
+      <span class="stars">★★★★★</span>
+      <p class="testi-quote">"The product descriptions LumiCore crafted for us were sharp, clear, and conversion-focused. Their CRM advisory also helped us streamline our entire sales process. A truly strategic partner."</p>
+      <div class="testi-meta">
+        <div>
+          <div class="testi-name">Nairobi Safety Shop Limited</div>
+          <div class="testi-role">NSSL — Safety Products & Solutions</div>
+        </div>
+        <span class="testi-service">Product Copywriting · CRM Advisory</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+
+    <!-- LEFT: Contact Info -->
+    <div class="reveal">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-h2">Let's build your<br><em>digital ecosystem.</em></h2>
+      <p class="contact-body">Whether you're starting from scratch or untangling what you already have — tell us where you are and where you want to go. We'll map a clear path forward.</p>
+      <div class="contact-info">
+        <div class="contact-line"><span><strong>Location:</strong> Nairobi, Kenya. Lucky Summer</span></div>
+        <div class="contact-line"><span><strong>Phone:</strong> +254 100582201 or +254713082563</span></div>
+        <div class="contact-line"><span><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#b5ddd0d9d9daf5d9c0d8dcd6dac7d09bd6da9bded0"><span class="__cf_email__" data-cfemail="761e131a1a19361a031b1f15190413581519581d13">[email&#160;protected]</span></a></span></div>
+        <div class="contact-line"><span><strong>Response time:</strong> Within 24 hours</span></div>
+      </div>
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/emmeshack" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://x.com/lumicoreke" target="_blank" rel="noopener" class="social-link" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Inquiry CTA -->
+    <div class="reveal" style="display:flex;flex-direction:column;gap:1.5rem;">
+
+      <!-- CTA Card -->
+      <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(198,169,107,0.15);border-radius:10px;padding:3rem;position:relative;overflow:hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-dk),var(--gold));"></div>
+
+        <div style="font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem;">Start Your Project</div>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:#fff;line-height:1.2;margin-bottom:1rem;">Ready to build something <em style="color:var(--gold);font-style:italic;">extraordinary?</em></h3>
+        <p style="font-size:0.9rem;line-height:1.8;color:rgba(255,255,255,0.45);margin-bottom:2rem;">Fill out our detailed inquiry form — takes 3 minutes. Tell us about your business, goals, budget and timeline. We'll get back to you within 24 hours with a clear path forward.</p>
+
+        <div style="display:flex;flex-direction:column;gap:0.8rem;margin-bottom:2.5rem;">
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.85rem;color:rgba(255,255,255,0.45);">
+            <span style="color:var(--gold);">✓</span> Free 30-minute discovery call
+          </div>
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.85rem;color:rgba(255,255,255,0.45);">
+            <span style="color:var(--gold);">✓</span> No commitment required
+          </div>
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.85rem;color:rgba(255,255,255,0.45);">
+            <span style="color:var(--gold);">✓</span> Response within 24 hours — always
+          </div>
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.85rem;color:rgba(255,255,255,0.45);">
+            <span style="color:var(--gold);">✓</span> Your information stays private
+          </div>
+        </div>
+
+        <a href="inquiry.html" class="btn btn-gold" style="display:inline-flex;align-items:center;gap:0.6rem;text-decoration:none;font-family:'Outfit',sans-serif;font-size:0.84rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;background:var(--gold);color:var(--deep);padding:1.1rem 2.5rem;border-radius:4px;transition:all 0.25s;border:none;cursor:pointer;">
+          Start Your Project →
+        </a>
+      </div>
+
+      <!-- WhatsApp quick contact -->
+      <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:1.8rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
+        <div>
+          <div style="font-size:0.85rem;font-weight:600;color:#fff;margin-bottom:0.2rem;">Prefer to chat first?</div>
+          <div style="font-size:0.8rem;color:rgba(255,255,255,0.35);">We respond within minutes on WhatsApp</div>
+        </div>
+        <a href="https://wa.me/254713082563" target="_blank" style="display:inline-flex;align-items:center;gap:0.6rem;text-decoration:none;font-family:'Outfit',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;background:rgba(37,211,102,0.1);color:#25d366;padding:0.75rem 1.5rem;border-radius:4px;border:1px solid rgba(37,211,102,0.2);transition:all 0.25s;">
+          💬 WhatsApp Us
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Lumi<span>Core</span></div>
+  <div class="footer-center">Copyright © 2026 LumiCore. Digital Consulting & Growth Solutions. Developed By Meshakh.<br>Clarity · Systems · Growth</div>
+  <ul class="footer-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="casestudies.html">Case Studies</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="inquiry.html">Start a Project</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // ── COOKIE CONSENT ──
+  (function() {
+    const choice = localStorage.getItem('lumicore_cookies');
+    if (!choice) {
+      setTimeout(() => document.getElementById('cookieBanner').classList.add('show'), 1500);
+    }
+    if (choice === 'all') { loadGoogleAnalytics(); }
+  })();
+
+  function setCookieChoice(level) {
+    localStorage.setItem('lumicore_cookies', level);
+    localStorage.setItem('lumicore_cookies_date', new Date().toISOString());
+    document.getElementById('cookieBanner').classList.remove('show');
+    if (level === 'all') { loadGoogleAnalytics(); }
+  }
+
+  function loadGoogleAnalytics() {
+    const GA_ID = 'G-EHZ14LM2HV';
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(script);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA_ID, { anonymize_ip: true });
+  }
+
+  // Custom cursor
+  const cursor = document.getElementById('cursor');
+  const ring   = document.getElementById('cursorRing');
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      setTimeout(() => { ring.style.left = e.clientX + 'px'; ring.style.top = e.clientY + 'px'; }, 80);
+    });
+  }
+
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), 60); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Make all reveals visible when nav anchor links are clicked
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      }, 300);
+    });
+  });
+
+  // Fallback: make all reveals visible after 2 seconds no matter what
+  setTimeout(() => {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+  }, 2000);
+
+  // Form
+  function   submitForm(e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('.form-submit');
+    btn.disabled = true; btn.style.opacity = '0.4';
+    document.getElementById('successMsg').style.display = 'block';
+  }
+
+    }
+
+</script>
+
+</html>
