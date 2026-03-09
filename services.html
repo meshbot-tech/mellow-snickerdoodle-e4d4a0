@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services | LumiCore — CRM, Web Design, SEO & Branding Nairobi</title>
+<meta name="description" content="Explore LumiCore's six core services: CRM optimization, web design, SEO, branding, digital marketing, and content strategy. Strategy-led digital consulting in Nairobi, Kenya.">
+<meta name="keywords" content="CRM optimization Nairobi, web design Kenya, SEO services Nairobi, branding Kenya, digital marketing Nairobi, content strategy Kenya, LumiCore services">
+<meta name="author" content="LumiCore">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://lumicore.co.ke/services.html">
+<meta property="og:title" content="Our Services | LumiCore Digital Consultancy">
+<meta property="og:description" content="Six disciplines. One connected strategy. CRM, Web, SEO, Branding, Marketing & Content.">
+<meta property="og:url" content="https://lumicore.co.ke/services.html">
+<meta property="og:type" content="website">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#0b0c10;--deep:#111420;--surface:#f7f6f2;--warm:#eeebe2;
+    --gold:#c6a96b;--gold-lt:#e4d4ad;--gold-dk:#8c6f3a;
+    --teal:#1a3a3a;--teal-mid:#2a5252;--teal-lt:#3d7070;
+    --text-muted:#5a5f6e;--border:rgba(198,169,107,0.25);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Outfit',sans-serif;background:var(--surface);color:var(--ink);overflow-x:hidden;}
+
+  /* NAV */
+  nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.6rem 5rem;display:flex;justify-content:space-between;align-items:center;transition:background 0.3s,padding 0.3s;}
+  nav.scrolled{background:rgba(247,246,242,0.97);backdrop-filter:blur(12px);padding:1rem 5rem;box-shadow:0 1px 0 rgba(0,0,0,0.06);}
+  .logo{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--ink);text-decoration:none;}
+  .logo span{color:var(--gold);}
+  .nav-links{display:flex;gap:2.8rem;list-style:none;align-items:center;}
+  .nav-links a{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;color:var(--text-muted);transition:color 0.25s;}
+  .nav-links a:hover{color:var(--ink);}
+  .nav-pill{background:var(--gold)!important;color:var(--deep)!important;padding:0.55rem 1.5rem!important;border-radius:100px!important;font-weight:600!important;}
+  .nav-pill:hover{background:var(--gold-lt)!important;}
+
+  /* HERO */
+  .page-hero{background:var(--deep);padding:10rem 5rem 6rem;position:relative;overflow:hidden;}
+  .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at top right,rgba(26,58,58,0.6) 0%,transparent 60%),radial-gradient(ellipse at bottom left,rgba(198,169,107,0.08) 0%,transparent 50%);}
+  .page-hero-inner{max-width:1300px;margin:0 auto;position:relative;z-index:1;}
+  .section-eyebrow{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1rem;}
+  .page-hero .section-eyebrow{color:var(--gold);}
+  .page-h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:1.2rem;}
+  .page-h1 em{color:var(--gold);font-style:italic;}
+  .page-hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.45);line-height:1.8;max-width:600px;}
+
+  /* SERVICES GRID */
+  .services-section{padding:7rem 5rem;background:var(--surface);}
+  .services-inner{max-width:1300px;margin:0 auto;}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:2rem;margin-top:4rem;}
+
+  .service-card{background:#fff;border:1px solid rgba(198,169,107,0.15);border-radius:12px;padding:2.5rem;position:relative;overflow:hidden;transition:transform 0.3s,box-shadow 0.3s;}
+  .service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-dk),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform 0.3s;}
+  .service-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,0.08);}
+  .service-card:hover::before{transform:scaleX(1);}
+
+  .service-icon{font-size:2rem;margin-bottom:1.2rem;}
+  .service-num{font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);font-weight:600;text-transform:uppercase;margin-bottom:0.6rem;}
+  .service-name{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--ink);margin-bottom:1rem;line-height:1.2;}
+  .service-desc{font-size:0.88rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem;}
+  .service-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.8rem;}
+  .service-tag{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;padding:0.3rem 0.8rem;border-radius:100px;background:rgba(198,169,107,0.1);color:var(--gold-dk);}
+  .service-cta{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-dk);text-decoration:none;transition:gap 0.2s;}
+  .service-cta:hover{gap:0.8rem;}
+
+  /* PROCESS STRIP */
+  .process-strip{background:var(--deep);padding:6rem 5rem;}
+  .process-strip-inner{max-width:1300px;margin:0 auto;}
+  .process-strip .section-eyebrow{color:var(--gold);}
+  .process-strip h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:#fff;margin-bottom:3rem;line-height:1.2;}
+  .process-strip h2 em{color:var(--gold);font-style:italic;}
+  .strip-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}
+  .strip-step{padding:1.5rem;border:1px solid rgba(255,255,255,0.06);border-radius:8px;}
+  .strip-step-num{font-size:0.65rem;letter-spacing:0.2em;color:var(--gold);font-weight:600;margin-bottom:0.6rem;}
+  .strip-step-name{font-size:1rem;font-weight:600;color:#fff;margin-bottom:0.5rem;}
+  .strip-step-desc{font-size:0.82rem;color:rgba(255,255,255,0.35);line-height:1.7;}
+
+  /* CTA SECTION */
+  .cta-section{padding:7rem 5rem;background:var(--warm);}
+  .cta-inner{max-width:800px;margin:0 auto;text-align:center;}
+  .cta-inner .section-eyebrow{color:var(--gold-dk);}
+  .cta-h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;color:var(--ink);margin-bottom:1rem;line-height:1.2;}
+  .cta-h2 em{color:var(--gold-dk);font-style:italic;}
+  .cta-sub{font-size:0.95rem;color:var(--text-muted);line-height:1.8;margin-bottom:2.5rem;}
+  .btn-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;font-family:'Outfit',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;transition:all 0.25s;cursor:pointer;border:none;min-height:44px;touch-action:manipulation;}
+  .btn-gold{background:var(--gold);color:var(--deep);padding:0.9rem 2rem;border-radius:3px;}
+  .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 10px 30px rgba(198,169,107,0.28);}
+  .btn-outline-dark{color:var(--ink);padding:0.9rem 2rem;border:1.5px solid rgba(0,0,0,0.2);border-radius:3px;}
+  .btn-outline-dark:hover{border-color:var(--gold);color:var(--gold-dk);}
+
+  /* FOOTER */
+  footer{background:#070809;padding:3.5rem 5rem;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;}
+  .footer-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#fff;}
+  .footer-logo span{color:var(--gold);}
+  .footer-center{font-size:0.75rem;color:rgba(255,255,255,0.22);text-align:center;line-height:1.7;}
+  .footer-links{display:flex;gap:2rem;list-style:none;flex-wrap:wrap;}
+  .footer-links a{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,0.28);transition:color 0.25s;}
+  .footer-links a:hover{color:var(--gold-lt);}
+
+  /* MOBILE */
+  @media(max-width:768px){
+    nav{padding:1.2rem 1.5rem;}
+    nav.scrolled{padding:0.8rem 1.5rem;}
+    .nav-links{display:none;}
+    .page-hero{padding:8rem 1.5rem 4rem;}
+    .services-section,.process-strip,.cta-section{padding:5rem 1.5rem;}
+    .services-grid{grid-template-columns:1fr;gap:1.5rem;}
+    .strip-steps{grid-template-columns:1fr 1fr;gap:1rem;}
+    footer{padding:2.5rem 1.5rem;flex-direction:column;text-align:center;}
+    .footer-links{justify-content:center;}
+    a,button,.btn,.btn-gold,.nav-pill,.service-cta{min-height:44px;touch-action:manipulation;cursor:pointer;}
+  }
+  @media(max-width:480px){
+    .strip-steps{grid-template-columns:1fr;}
+    .btn-group{flex-direction:column;align-items:center;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="logo">Lumi<span>Core</span></a>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="casestudies.html">Case Studies</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="inquiry.html" class="nav-pill">Start a Project</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-eyebrow">What We Do</div>
+    <h1 class="page-h1">Six disciplines.<br><em>One connected strategy.</em></h1>
+    <p class="page-hero-sub">We don't deliver isolated services. Every engagement is designed so your CRM, website, SEO, brand, marketing, and content amplify each other — building a digital ecosystem that compounds.</p>
+  </div>
+</section>
+
+<!-- SERVICES GRID -->
+<section class="services-section">
+  <div class="services-inner">
+    <div class="section-eyebrow">Our Services</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:var(--ink);line-height:1.2;">Everything your business needs <em style="color:var(--gold-dk);font-style:italic;">to grow digitally.</em></h2>
+
+    <div class="services-grid">
+
+      <!-- CRM -->
+      <div class="service-card">
+        <div class="service-icon">🔗</div>
+        <div class="service-num">01</div>
+        <h3 class="service-name">CRM Consultation & Optimization</h3>
+        <p class="service-desc">We help businesses select, implement, audit, configure, and optimize your CRM so your team spends less time managing tools and more time building relationships. From HubSpot to Salesforce, we make your system work the way your business does.</p>
+        <div class="service-tags">
+          <span class="service-tag">HubSpot</span>
+          <span class="service-tag">Salesforce</span>
+          <span class="service-tag">Monday.com</span>
+          <span class="service-tag">Automation</span>
+          <span class="service-tag">Pipeline Design</span>
+        </div>
+        <a href="inquiry.html" class="service-cta">Start with CRM →</a>
+      </div>
+
+      <!-- WEB -->
+      <div class="service-card">
+        <div class="service-icon">⬡</div>
+        <div class="service-num">02</div>
+        <h3 class="service-name">Web Design & Development</h3>
+        <p class="service-desc">Purpose-built websites that convert visitors into customers. We design and develop digital experiences that reflect your brand, serve your audience, and scale as your business grows — built for performance from the ground up.</p>
+        <div class="service-tags">
+          <span class="service-tag">WordPress</span>
+          <span class="service-tag">UX/UI</span>
+          <span class="service-tag">Responsive Design</span>
+          <span class="service-tag">Conversion Rate</span>
+          <span class="service-tag">Website Management</span>
+        </div>
+        <a href="inquiry.html" class="service-cta">Build your website →</a>
+      </div>
+
+      <!-- SEO -->
+      <div class="service-card">
+        <div class="service-icon">◎</div>
+        <div class="service-num">03</div>
+        <h3 class="service-name">Search Engine Optimization</h3>
+        <p class="service-desc">We help businesses increase visibility, authority, and organic traffic through strategic, ethical SEO practices. From technical audits to content architecture — we build SEO that compounds over time.</p>
+        <div class="service-tags">
+          <span class="service-tag">Technical SEO</span>
+          <span class="service-tag">On-Page SEO</span>
+          <span class="service-tag">Content Architecture</span>
+          <span class="service-tag">SEO Audits</span>
+          <span class="service-tag">Link Building</span>
+        </div>
+        <a href="inquiry.html" class="service-cta">Improve your ranking →</a>
+      </div>
+
+      <!-- BRANDING -->
+      <div class="service-card">
+        <div class="service-icon">◈</div>
+        <div class="service-num">04</div>
+        <h3 class="service-name">Branding & Visual Identity</h3>
+        <p class="service-desc">Brand clarity before brand beauty. We build identities rooted in strategy — defining your positioning, visual language, and voice to create recognition, trust, and differentiation that lasts.</p>
+        <div class="service-tags">
+          <span class="service-tag">Logo & Identity</span>
+          <span class="service-tag">Positioning</span>
+          <span class="service-tag">Brand Guidelines</span>
+          <span class="service-tag">Voice & Tone</span>
+          <span class="service-tag">Visual Language</span>
+        </div>
+        <a href="inquiry.html" class="service-cta">Build your brand →</a>
+      </div>
+
+      <!-- MARKETING -->
+      <div class="service-card">
+        <div class="service-icon">⟁</div>
+        <div class="service-num">05</div>
+        <h3 class="service-name">Digital Marketing Strategy</h3>
+        <p class="service-desc">We design digital marketing systems that attract, nurture, and convert customers across multiple channels. Data-driven campaigns with clear ROI — not just impressions and vanity metrics.</p>
+        <div class="service-tags">
+          <span class="service-tag">Social Media</span>
+          <span class="service-tag">Digital Campaigns</span>
+          <span class="service-tag">Email Marketing</span>
+          <span class="service-tag">Funnels</span>
+          <span class="service-tag">Analytics</span>
+        </div>
+        <a href="inquiry.html" class="service-cta">Grow your audience →</a>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="service-card">
+        <div class="service-icon">✦</div>
+        <div class="service-num">06</div>
+        <h3 class="service-name">Copywriting & Content Strategy</h3>
+        <p class="service-desc">Words that work as hard as your strategy. We craft messaging frameworks, website copy, editorial plans, and content that communicates your value clearly and moves audiences to act.</p>
+        <div class="service-tags">
+          <span class="service-tag">Website Copy</span>
+          <span class="service-tag">Landing Pages</span>
+          <span class="service-tag">Content Plans</span>
+          <span class="service-tag">Messaging</span>
+          <span class="service-tag">Thought Leadership</span>
+        </div>
+        <a href="inquiry.html" class="service-cta">Sharpen your message →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS STRIP -->
+<section class="process-strip">
+  <div class="process-strip-inner">
+    <div class="section-eyebrow">How It Works</div>
+    <h2>Our process is <em>clear and repeatable.</em></h2>
+    <div class="strip-steps">
+      <div class="strip-step">
+        <div class="strip-step-num">01</div>
+        <div class="strip-step-name">Discover</div>
+        <div class="strip-step-desc">We learn your business deeply — goals, gaps, audience, and competitive context.</div>
+      </div>
+      <div class="strip-step">
+        <div class="strip-step-num">02</div>
+        <div class="strip-step-name">Strategize</div>
+        <div class="strip-step-desc">We design a connected roadmap prioritized for your resources and timeline.</div>
+      </div>
+      <div class="strip-step">
+        <div class="strip-step-num">03</div>
+        <div class="strip-step-name">Execute</div>
+        <div class="strip-step-desc">We build, launch, and optimize with transparent communication at every milestone.</div>
+      </div>
+      <div class="strip-step">
+        <div class="strip-step-num">04</div>
+        <div class="strip-step-name">Scale</div>
+        <div class="strip-step-desc">We hand off a functioning ecosystem with documentation and training to keep compounding.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="section-eyebrow">Ready to begin?</div>
+    <h2 class="cta-h2">Let's build your <em>digital ecosystem.</em></h2>
+    <p class="cta-sub">Tell us where you are and where you want to go. We'll map a clear path forward — no jargon, no confusion.</p>
+    <div class="btn-group">
+      <a href="inquiry.html" class="btn btn-gold">Start Your Project →</a>
+      <a href="pricing.html" class="btn btn-outline-dark">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Lumi<span>Core</span></div>
+  <div class="footer-center">Copyright © 2026 LumiCore. Digital Consulting & Growth Solutions. Developed By Meshakh.<br>Clarity · Systems · Growth</div>
+  <ul class="footer-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="casestudies.html">Case Studies</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="inquiry.html">Start a Project</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
+</body>
+</html>
