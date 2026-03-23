@@ -1,266 +1,669 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Start a Project | LumiCore — Client Inquiry Form</title>
-<meta name="description" content="Start your project with LumiCore. Fill out our detailed inquiry form and we'll get back to you within 24 hours with a clear path forward.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start a Project | LumiCore — Client Inquiry</title>
+<meta name="description" content="Start your project with LumiCore. Fill out our inquiry form and we'll get back to you within 24 hours with a clear path forward.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://lumicore.co.ke/inquiry.html">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"><link rel="manifest" href="site.webmanifest"><link rel="shortcut icon" href="favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#0a1628;--navy-mid:#0f2040;--blue:#1a6dff;--blue-lt:#4d8fff;--blue-dk:#0050cc;--blue-glow:rgba(26,109,255,0.12);--blue-border:rgba(26,109,255,0.25);--white:#ffffff;--muted:#7a90b0;--border:rgba(255,255,255,0.07);--red:#ff4d4d;}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}body{font-family:"DM Sans",sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden;min-height:100vh;}
-::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--navy);}::-webkit-scrollbar-thumb{background:var(--blue);border-radius:2px;}
-nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.4rem 5rem;display:flex;justify-content:space-between;align-items:center;transition:all 0.3s;border-bottom:1px solid transparent;}
-nav.scrolled{background:rgba(10,22,40,0.97);backdrop-filter:blur(16px);padding:1rem 5rem;border-bottom-color:var(--border);}
-.logo{font-family:"Syne",sans-serif;font-size:1.5rem;font-weight:800;color:var(--white);text-decoration:none;letter-spacing:-0.02em;}.logo span{color:var(--blue);}
-.nav-links{display:flex;gap:2.5rem;list-style:none;align-items:center;}
-.nav-links a{font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;color:var(--muted);transition:color 0.2s;font-weight:500;}.nav-links a:hover{color:var(--white);}
-.nav-pill{background:var(--blue)!important;color:var(--white)!important;padding:0.6rem 1.6rem!important;border-radius:4px!important;font-weight:600!important;}.nav-pill:hover{background:var(--blue-lt)!important;}
-.inquiry-wrap{min-height:100vh;padding:9rem 5rem 5rem;display:flex;align-items:center;justify-content:center;position:relative;}
-.inquiry-wrap::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(26,109,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(26,109,255,0.03) 1px,transparent 1px);background-size:64px 64px;pointer-events:none;}
-.inquiry-wrap::after{content:"";position:absolute;top:-10%;right:-5%;width:600px;height:600px;background:radial-gradient(circle,rgba(26,109,255,0.08) 0%,transparent 70%);pointer-events:none;}
-.inquiry-box{width:100%;max-width:720px;position:relative;z-index:1;}
-.inquiry-header{margin-bottom:3rem;}
-.inquiry-eyebrow{font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--blue-lt);font-weight:600;margin-bottom:0.8rem;}
-.inquiry-h1{font-family:"Syne",sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-0.03em;color:var(--white);line-height:1.1;margin-bottom:0.8rem;}.inquiry-h1 em{color:var(--blue);font-style:normal;}
-.inquiry-sub{font-size:0.92rem;color:var(--muted);line-height:1.8;}
-.progress-wrap{margin-bottom:2.5rem;}
-.progress-steps{display:flex;align-items:center;gap:0;margin-bottom:1rem;}
-.prog-step{display:flex;align-items:center;gap:0.6rem;flex:1;}
-.prog-dot{width:32px;height:32px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:"Syne",sans-serif;font-size:0.7rem;font-weight:800;color:var(--muted);transition:all 0.3s;flex-shrink:0;}
-.prog-step.active .prog-dot{border-color:var(--blue);color:var(--blue);box-shadow:0 0 12px rgba(26,109,255,0.3);}
-.prog-step.done .prog-dot{background:var(--blue);border-color:var(--blue);color:var(--white);}
-.prog-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);font-weight:500;}
-.prog-step.active .prog-label{color:var(--white);}
-.prog-step.done .prog-label{color:var(--blue-lt);}
-.prog-line{flex:1;height:1px;background:var(--border);margin:0 0.5rem;}
-.prog-step.done+.prog-step .prog-line,.prog-line.done{background:var(--blue);}
-.progress-bar-wrap{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
-.progress-bar-fill{height:100%;background:linear-gradient(90deg,var(--blue-dk),var(--blue));border-radius:2px;transition:width 0.5s ease;}
-.step-panel{display:none;animation:fadeIn 0.3s ease;}
-.step-panel.active{display:block;}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
-.step-title{font-family:"Syne",sans-serif;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:0.3rem;}
-.step-sub{font-size:0.83rem;color:var(--muted);margin-bottom:2rem;line-height:1.6;}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.2rem;}
-.field{display:flex;flex-direction:column;gap:0.4rem;}
-.field.full{grid-column:1/-1;}
-.field label{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);font-weight:600;}
-.field input,.field select,.field textarea{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:6px;padding:0.85rem 1rem;font-family:"DM Sans",sans-serif;font-size:0.9rem;color:var(--white);transition:border-color 0.2s,box-shadow 0.2s;outline:none;min-height:44px;touch-action:manipulation;}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue-border);box-shadow:0 0 0 3px rgba(26,109,255,0.1);}
-.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,0.2);}
-.field select option{background:var(--navy-mid);color:var(--white);}
-.field textarea{min-height:120px;resize:vertical;}
-.choices-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;margin-bottom:1.5rem;}
-.choice-card{padding:1.2rem;border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:0.8rem;min-height:44px;touch-action:manipulation;pointer-events:auto;}
-.choice-card:hover{border-color:var(--blue-border);background:var(--blue-glow);}
-.choice-card.selected{border-color:var(--blue);background:var(--blue-glow);}
-.choice-icon{font-size:1.2rem;flex-shrink:0;}
-.choice-text{font-size:0.85rem;font-weight:500;color:var(--white);}
-.choice-card.selected .choice-text{color:var(--blue-lt);}
-.btn-row{display:flex;gap:1rem;justify-content:space-between;margin-top:2.5rem;}
-.btn-next,.btn-submit{background:var(--blue);color:var(--white);border:none;padding:0.9rem 2rem;border-radius:4px;font-family:"DM Sans",sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;min-height:44px;touch-action:manipulation;pointer-events:auto;display:inline-flex;align-items:center;gap:0.5rem;}
-.btn-next:hover,.btn-submit:hover{background:var(--blue-lt);transform:translateY(-1px);}
-.btn-prev{background:transparent;color:var(--muted);border:1px solid var(--border);padding:0.9rem 2rem;border-radius:4px;font-family:"DM Sans",sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all 0.25s;min-height:44px;touch-action:manipulation;pointer-events:auto;}
-.btn-prev:hover{border-color:var(--blue-border);color:var(--white);}
-.success-screen{display:none;text-align:center;padding:4rem 2rem;}
-.success-screen.show{display:block;}
-.success-icon{font-size:4rem;margin-bottom:1.5rem;}
-.success-h2{font-family:"Syne",sans-serif;font-size:2rem;font-weight:800;color:var(--white);margin-bottom:1rem;letter-spacing:-0.02em;}.success-h2 em{color:var(--blue);font-style:normal;}
-.success-p{font-size:0.92rem;color:var(--muted);line-height:1.8;margin-bottom:2.5rem;}
-.success-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
-.btn-suc{display:inline-flex;align-items:center;gap:0.5rem;text-decoration:none;font-family:"DM Sans",sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;transition:all 0.25s;min-height:44px;touch-action:manipulation;pointer-events:auto;padding:0.9rem 2rem;border-radius:4px;}
-.btn-suc-blue{background:var(--blue);color:var(--white);}.btn-suc-blue:hover{background:var(--blue-lt);}
-.btn-suc-outline{background:transparent;color:var(--muted);border:1px solid var(--border);}.btn-suc-outline:hover{border-color:var(--blue-border);color:var(--white);}
-footer{background:#06101e;padding:3rem 5rem;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;border-top:1px solid var(--border);}
-.footer-logo{font-family:"Syne",sans-serif;font-size:1.3rem;font-weight:800;color:var(--white);letter-spacing:-0.02em;}.footer-logo span{color:var(--blue);}
-.footer-center{font-size:0.72rem;color:rgba(255,255,255,0.18);text-align:center;line-height:1.7;}
-.footer-links{display:flex;gap:2rem;list-style:none;flex-wrap:wrap;}
-.footer-links a{font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,0.22);transition:color 0.2s;}.footer-links a:hover{color:var(--blue-lt);}
-@media(max-width:768px){nav{padding:1.2rem 1.5rem;}nav.scrolled{padding:0.8rem 1.5rem;}.nav-links{display:none;}.inquiry-wrap{padding:7rem 1.5rem 3rem;}.form-grid{grid-template-columns:1fr;}.choices-grid{grid-template-columns:1fr;}.btn-row{flex-direction:column;}.prog-label{display:none;}footer{padding:2rem 1.5rem;flex-direction:column;text-align:center;}.footer-links{justify-content:center;}a,button,.btn-next,.btn-prev,.btn-submit,.btn-suc,.choice-card{min-height:44px;touch-action:manipulation;cursor:pointer;pointer-events:auto;}}
+:root {
+  --navy: #0a1628;
+  --navy-mid: #0f2040;
+  --navy-lt: #162a52;
+  --blue: #1a6dff;
+  --blue-lt: #4d8fff;
+  --blue-dk: #0050cc;
+  --blue-glow: rgba(26,109,255,0.12);
+  --blue-border: rgba(26,109,255,0.25);
+  --white: #ffffff;
+  --muted: #7a90b0;
+  --border: rgba(255,255,255,0.07);
+  --green: #22c55e;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--navy); color: var(--white); overflow-x: hidden; min-height: 100vh; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 2px; }
+
+/* NAV */
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; padding: 1.4rem 5rem; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s; border-bottom: 1px solid transparent; }
+nav.scrolled { background: rgba(10,22,40,0.97); backdrop-filter: blur(16px); padding: 1rem 5rem; border-bottom-color: var(--border); }
+.logo { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--white); text-decoration: none; letter-spacing: -0.02em; }
+.logo span { color: var(--blue); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; color: var(--muted); transition: color 0.2s; font-weight: 500; }
+.nav-links a:hover { color: var(--white); }
+.nav-pill { background: var(--blue) !important; color: var(--white) !important; padding: 0.6rem 1.6rem !important; border-radius: 4px !important; font-weight: 600 !important; }
+
+/* PAGE LAYOUT */
+.page-wrap { min-height: 100vh; display: grid; grid-template-columns: 1fr 1.1fr; }
+
+/* LEFT PANEL */
+.left-panel { background: var(--navy-mid); padding: 9rem 4rem 4rem; position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; border-right: 1px solid var(--border); }
+.left-panel::before { content: ''; position: absolute; top: -20%; right: -20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(26,109,255,0.1) 0%, transparent 70%); pointer-events: none; }
+.left-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(26,109,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(26,109,255,0.03) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; }
+.left-content { position: relative; z-index: 1; }
+.left-eyebrow { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blue-lt); font-weight: 600; margin-bottom: 1.2rem; }
+.left-h1 { font-family: 'Syne', sans-serif; font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 800; letter-spacing: -0.03em; color: var(--white); line-height: 1.1; margin-bottom: 1.2rem; }
+.left-h1 em { color: var(--blue); font-style: normal; }
+.left-sub { font-size: 0.9rem; color: var(--muted); line-height: 1.8; margin-bottom: 3rem; font-weight: 300; }
+.trust-items { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem; }
+.trust-item { display: flex; align-items: center; gap: 0.9rem; }
+.trust-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--blue-glow); border: 1px solid var(--blue-border); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+.trust-text { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.4; }
+.trust-text strong { color: var(--white); font-weight: 600; }
+.left-divider { height: 1px; background: var(--border); margin-bottom: 2rem; }
+.contact-quick { display: flex; flex-direction: column; gap: 0.8rem; }
+.contact-quick-item { display: flex; align-items: center; gap: 0.8rem; font-size: 0.8rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.contact-quick-item:hover { color: var(--blue-lt); }
+.contact-quick-item svg { width: 16px; height: 16px; fill: var(--blue-lt); flex-shrink: 0; }
+
+/* RIGHT PANEL */
+.right-panel { padding: 9rem 4rem 4rem; overflow-y: auto; }
+.form-wrap { max-width: 580px; }
+
+/* PROGRESS */
+.progress-header { margin-bottom: 2.5rem; }
+.step-indicator { display: flex; align-items: center; gap: 0; margin-bottom: 1.2rem; }
+.step-dot-wrap { display: flex; align-items: center; gap: 0; flex: 1; }
+.step-dot { width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: 'Syne', sans-serif; font-size: 0.68rem; font-weight: 800; color: var(--muted); transition: all 0.4s; position: relative; flex-shrink: 0; cursor: default; }
+.step-dot.active { border-color: var(--blue); color: var(--blue); box-shadow: 0 0 16px rgba(26,109,255,0.3); }
+.step-dot.done { background: var(--blue); border-color: var(--blue); color: var(--white); }
+.step-dot.done::after { content: '✓'; position: absolute; font-size: 0.75rem; }
+.step-dot.done .dot-num { display: none; }
+.step-line { flex: 1; height: 1px; background: var(--border); transition: background 0.4s; }
+.step-line.done { background: var(--blue); }
+.step-labels { display: flex; justify-content: space-between; }
+.step-label { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 500; transition: color 0.3s; flex: 1; text-align: center; }
+.step-label:first-child { text-align: left; }
+.step-label:last-child { text-align: right; }
+.step-label.active { color: var(--white); }
+.step-label.done { color: var(--blue-lt); }
+.progress-bar-track { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.progress-bar-fill { height: 100%; background: linear-gradient(90deg, var(--blue-dk), var(--blue-lt)); border-radius: 2px; transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+
+/* STEPS */
+.step-panel { display: none; }
+.step-panel.active { display: block; animation: slideIn 0.35s ease; }
+@keyframes slideIn { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: translateX(0); } }
+.step-heading { margin-bottom: 2rem; }
+.step-num-label { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--blue-lt); font-weight: 600; margin-bottom: 0.4rem; }
+.step-title { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--white); margin-bottom: 0.3rem; letter-spacing: -0.01em; }
+.step-sub { font-size: 0.83rem; color: var(--muted); line-height: 1.6; }
+
+/* FIELDS */
+.fields-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.5rem; }
+.field { display: flex; flex-direction: column; gap: 0.5rem; }
+.field.full { grid-column: 1 / -1; }
+.field label { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.field input, .field select, .field textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  outline: none;
+  min-height: 48px;
+  touch-action: manipulation;
+  width: 100%;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: var(--blue-border);
+  background: rgba(26,109,255,0.06);
+  box-shadow: 0 0 0 3px rgba(26,109,255,0.1);
+}
+.field input::placeholder, .field textarea::placeholder { color: rgba(255,255,255,0.18); }
+.field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 7L11 1' stroke='%237a90b0' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; cursor: pointer; }
+.field select option { background: var(--navy-mid); color: var(--white); }
+.field textarea { min-height: 110px; resize: vertical; line-height: 1.7; }
+
+/* SERVICE CHOICES */
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.5rem; }
+.service-choice { padding: 1rem 1.2rem; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 0.8rem; min-height: 56px; touch-action: manipulation; pointer-events: auto; user-select: none; }
+.service-choice:hover { border-color: var(--blue-border); background: var(--blue-glow); }
+.service-choice.selected { border-color: var(--blue); background: rgba(26,109,255,0.1); }
+.service-choice .sc-icon { font-size: 1.1rem; flex-shrink: 0; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; background: var(--blue-glow); border-radius: 6px; border: 1px solid var(--blue-border); }
+.service-choice .sc-label { font-size: 0.82rem; font-weight: 500; color: var(--white); line-height: 1.3; }
+.service-choice.selected .sc-label { color: var(--blue-lt); }
+.service-choice .sc-check { margin-left: auto; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.2s; }
+.service-choice.selected .sc-check { background: var(--blue); border-color: var(--blue); }
+.service-choice.selected .sc-check::after { content: '✓'; font-size: 0.65rem; color: var(--white); font-weight: 700; }
+
+/* BUDGET CHOICES */
+.budget-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1.5rem; }
+.budget-choice { padding: 1.2rem; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; transition: all 0.2s; text-align: center; min-height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center; touch-action: manipulation; pointer-events: auto; user-select: none; }
+.budget-choice:hover { border-color: var(--blue-border); background: var(--blue-glow); }
+.budget-choice.selected { border-color: var(--blue); background: rgba(26,109,255,0.1); }
+.budget-amount { font-family: 'Syne', sans-serif; font-size: 0.92rem; font-weight: 700; color: var(--white); margin-bottom: 0.2rem; }
+.budget-choice.selected .budget-amount { color: var(--blue-lt); }
+.budget-note { font-size: 0.7rem; color: var(--muted); }
+
+/* NAV BUTTONS */
+.btn-row { display: flex; align-items: center; justify-content: space-between; margin-top: 2.5rem; gap: 1rem; }
+.btn-prev { background: transparent; color: var(--muted); border: 1px solid var(--border); padding: 0.85rem 1.8rem; border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.2s; min-height: 48px; touch-action: manipulation; pointer-events: auto; }
+.btn-prev:hover { border-color: var(--blue-border); color: var(--white); }
+.btn-next, .btn-submit { background: var(--blue); color: var(--white); border: none; padding: 0.85rem 2rem; border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; transition: all 0.25s; min-height: 48px; touch-action: manipulation; pointer-events: auto; display: inline-flex; align-items: center; gap: 0.5rem; }
+.btn-next:hover, .btn-submit:hover:not(:disabled) { background: var(--blue-lt); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(26,109,255,0.35); }
+.btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+/* SUCCESS */
+.success-screen { display: none; min-height: 60vh; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 3rem 0; }
+.success-screen.show { display: flex; animation: fadeUp 0.5s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.success-badge { width: 80px; height: 80px; border-radius: 50%; background: rgba(34,197,94,0.1); border: 2px solid rgba(34,197,94,0.3); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 2rem; box-shadow: 0 0 30px rgba(34,197,94,0.2); }
+.success-h2 { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--white); margin-bottom: 0.8rem; letter-spacing: -0.02em; }
+.success-h2 em { color: var(--green); font-style: normal; }
+.success-p { font-size: 0.9rem; color: var(--muted); line-height: 1.8; margin-bottom: 2.5rem; max-width: 440px; }
+.success-actions { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+.btn-suc { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; transition: all 0.25s; min-height: 48px; padding: 0.85rem 2rem; border-radius: 4px; touch-action: manipulation; pointer-events: auto; }
+.btn-suc-blue { background: var(--blue); color: var(--white); }.btn-suc-blue:hover { background: var(--blue-lt); }
+.btn-suc-outline { background: transparent; color: var(--muted); border: 1px solid var(--border); }.btn-suc-outline:hover { border-color: var(--blue-border); color: var(--white); }
+
+/* FOOTER */
+footer { background: #06101e; padding: 2.5rem 5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; border-top: 1px solid var(--border); }
+.footer-logo { font-family: 'Syne', sans-serif; font-size: 1.2rem; font-weight: 800; color: var(--white); letter-spacing: -0.02em; }
+.footer-logo span { color: var(--blue); }
+.footer-center { font-size: 0.7rem; color: rgba(255,255,255,0.18); text-align: center; line-height: 1.7; }
+.footer-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+.footer-links a { font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: rgba(255,255,255,0.22); transition: color 0.2s; }
+.footer-links a:hover { color: var(--blue-lt); }
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .page-wrap { grid-template-columns: 1fr; }
+  .left-panel { display: none; }
+  .right-panel { padding: 7rem 1.5rem 3rem; }
+  .form-wrap { max-width: 100%; }
+}
+@media (max-width: 768px) {
+  nav { padding: 1.2rem 1.5rem; }
+  nav.scrolled { padding: 0.8rem 1.5rem; }
+  .nav-links { display: none; }
+  .fields-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .budget-grid { grid-template-columns: 1fr 1fr; }
+  .step-labels { display: none; }
+  .btn-row { flex-direction: column-reverse; }
+  .btn-next, .btn-submit, .btn-prev { width: 100%; justify-content: center; }
+  footer { padding: 2rem 1.5rem; flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; }
+  a, button, .service-choice, .budget-choice { min-height: 48px; touch-action: manipulation; cursor: pointer; pointer-events: auto; }
+  a[href] { pointer-events: auto; cursor: pointer; }
+}
+@media (max-width: 480px) {
+  .budget-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
+
 <nav id="nav">
   <a href="index.html" class="logo">Lumi<span>Core</span></a>
-  <ul class="nav-links"><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="casestudies.html">Case Studies</a></li><li><a href="pricing.html">Pricing</a></li></ul>
+  <ul class="nav-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="casestudies.html">Case Studies</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+  </ul>
 </nav>
-<div class="inquiry-wrap">
-  <div class="inquiry-box">
-    <div class="inquiry-header" id="inquiryHeader">
-      <div class="inquiry-eyebrow">Start Your Project</div>
-      <h1 class="inquiry-h1">Tell us about your <em>business.</em></h1>
-      <p class="inquiry-sub">Takes 3 minutes. We'll get back to you within 24 hours with a clear path forward.</p>
-    </div>
-    <div class="progress-wrap" id="progressWrap">
-      <div class="progress-steps">
-        <div class="prog-step active" id="ps1"><div class="prog-dot">01</div><span class="prog-label">About You</span></div>
-        <div class="prog-line" id="pl1"></div>
-        <div class="prog-step" id="ps2"><div class="prog-dot">02</div><span class="prog-label">Services</span></div>
-        <div class="prog-line" id="pl2"></div>
-        <div class="prog-step" id="ps3"><div class="prog-dot">03</div><span class="prog-label">Goals</span></div>
-        <div class="prog-line" id="pl3"></div>
-        <div class="prog-step" id="ps4"><div class="prog-dot">04</div><span class="prog-label">Budget</span></div>
-      </div>
-      <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill" style="width:25%"></div></div>
-    </div>
-    <form id="inquiryForm" action="https://formspree.io/f/mjgabwdz" method="POST">
-      <!-- Step 1 -->
-      <div class="step-panel active" id="step1">
-        <div class="step-title">About You</div>
-        <div class="step-sub">Let's start with the basics — who are you and where's your business?</div>
-        <div class="form-grid">
-          <div class="field"><label>First Name *</label><input type="text" name="first_name" placeholder="Jane" required></div>
-          <div class="field"><label>Last Name *</label><input type="text" name="last_name" placeholder="Smith" required></div>
-          <div class="field"><label>Business Email *</label><input type="email" name="email" placeholder="jane@company.com" required></div>
-          <div class="field"><label>Phone / WhatsApp *</label><input type="tel" name="phone" placeholder="+254 7XX XXX XXX" required></div>
-          <div class="field full"><label>Business / Organization Name *</label><input type="text" name="business" placeholder="Your Business Name" required></div>
-          <div class="field full"><label>Industry / Type of Business</label><input type="text" name="industry" placeholder="e.g. Consulting, Retail, Healthcare..."></div>
+
+<div class="page-wrap">
+
+  <!-- LEFT PANEL -->
+  <div class="left-panel">
+    <div class="left-grid"></div>
+    <div class="left-content">
+      <div class="left-eyebrow">LumiCore · Nairobi, Kenya</div>
+      <h1 class="left-h1">Let's build your<br><em>digital ecosystem.</em></h1>
+      <p class="left-sub">Tell us where you are and where you want to go. We'll map a clear path forward — no jargon, no commitment required.</p>
+
+      <div class="trust-items">
+        <div class="trust-item">
+          <div class="trust-icon">⚡</div>
+          <div class="trust-text"><strong>24-hour response</strong> — guaranteed on every inquiry</div>
         </div>
-        <div class="btn-row"><div></div><button type="button" class="btn-next" onclick="goTo(2)">Continue →</button></div>
-      </div>
-      <!-- Step 2 -->
-      <div class="step-panel" id="step2">
-        <div class="step-title">Services of Interest</div>
-        <div class="step-sub">What does your business need most? Select all that apply.</div>
-        <div class="choices-grid" id="servicesGrid">
-          <div class="choice-card" onclick="toggleChoice(this,'CRM Consultation & Optimization')"><span class="choice-icon">🔗</span><span class="choice-text">CRM Consultation & Optimization</span></div>
-          <div class="choice-card" onclick="toggleChoice(this,'Web Design & Development')"><span class="choice-icon">⬡</span><span class="choice-text">Web Design & Development</span></div>
-          <div class="choice-card" onclick="toggleChoice(this,'Search Engine Optimization')"><span class="choice-icon">◎</span><span class="choice-text">Search Engine Optimization</span></div>
-          <div class="choice-card" onclick="toggleChoice(this,'Branding & Visual Identity')"><span class="choice-icon">◈</span><span class="choice-text">Branding & Visual Identity</span></div>
-          <div class="choice-card" onclick="toggleChoice(this,'Digital Marketing Strategy')"><span class="choice-icon">⟁</span><span class="choice-text">Digital Marketing Strategy</span></div>
-          <div class="choice-card" onclick="toggleChoice(this,'Copywriting & Content Strategy')"><span class="choice-icon">✦</span><span class="choice-text">Copywriting & Content Strategy</span></div>
-          <div class="choice-card" onclick="toggleChoice(this,'Full Ecosystem (Multiple Services)')"><span class="choice-icon">🌐</span><span class="choice-text">Full Ecosystem (Multiple Services)</span></div>
-          <div class="choice-card" onclick="toggleChoice(this,'Not sure — need guidance')"><span class="choice-icon">💭</span><span class="choice-text">Not sure — need guidance</span></div>
+        <div class="trust-item">
+          <div class="trust-icon">🎯</div>
+          <div class="trust-text"><strong>Free discovery call</strong> — 30 minutes, no commitment</div>
         </div>
-        <input type="hidden" name="services_interested" id="servicesHidden">
-        <div class="btn-row"><button type="button" class="btn-prev" onclick="goTo(1)">← Back</button><button type="button" class="btn-next" onclick="goTo(3)">Continue →</button></div>
-      </div>
-      <!-- Step 3 -->
-      <div class="step-panel" id="step3">
-        <div class="step-title">Goals & Timeline</div>
-        <div class="step-sub">Help us understand where you are and what you're working towards.</div>
-        <div class="form-grid">
-          <div class="field full"><label>What's your biggest challenge right now? *</label><textarea name="challenge" rows="4" placeholder="Tell us what you're working on and where you're stuck..." required></textarea></div>
-          <div class="field full"><label>What does success look like for you?</label><textarea name="success" rows="3" placeholder="Describe what a great outcome looks like for your business..."></textarea></div>
-          <div class="field">
-            <label>Timeline *</label>
-            <select name="timeline" required>
-              <option value="">— Select timeline —</option>
-              <option>ASAP — need to move quickly</option>
-              <option>Within 1 month</option>
-              <option>1–3 months</option>
-              <option>Just exploring options</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Where did you hear about us?</label>
-            <select name="source">
-              <option value="">— Select —</option>
-              <option>LinkedIn</option>
-              <option>Google Search</option>
-              <option>Referral / Word of mouth</option>
-              <option>WhatsApp</option>
-              <option>Other</option>
-            </select>
-          </div>
+        <div class="trust-item">
+          <div class="trust-icon">🔒</div>
+          <div class="trust-text"><strong>Your information stays private</strong> — we never share it</div>
         </div>
-        <div class="btn-row"><button type="button" class="btn-prev" onclick="goTo(2)">← Back</button><button type="button" class="btn-next" onclick="goTo(4)">Continue →</button></div>
-      </div>
-      <!-- Step 4 -->
-      <div class="step-panel" id="step4">
-        <div class="step-title">Budget & Final Details</div>
-        <div class="step-sub">Almost done — help us understand your investment range.</div>
-        <div class="form-grid">
-          <div class="field full">
-            <label>Estimated Budget *</label>
-            <select name="budget" required>
-              <option value="">— Select budget range —</option>
-              <option>Under Ksh 30,000</option>
-              <option>Ksh 30,000 – 60,000</option>
-              <option>Ksh 60,000 – 90,000</option>
-              <option>Ksh 100,000 – 130,000</option>
-              <option>Open to discussion</option>
-            </select>
-          </div>
-          <div class="field full"><label>Anything else you'd like us to know?</label><textarea name="additional" rows="3" placeholder="Share any additional context, questions, or special requirements..."></textarea></div>
+        <div class="trust-item">
+          <div class="trust-icon">🏆</div>
+          <div class="trust-text"><strong>Top 5 Kenya</strong> — Growth & Lead Generation, Favikon 2025</div>
         </div>
-        <div class="btn-row"><button type="button" class="btn-prev" onclick="goTo(3)">← Back</button><button type="submit" class="btn-submit" id="submitBtn">Submit Inquiry →</button></div>
       </div>
-    </form>
-    <!-- Success -->
-    <div class="success-screen" id="successScreen">
-      <div class="success-icon">✅</div>
-      <h2 class="success-h2">Inquiry <em>received.</em></h2>
-      <p class="success-p">Thank you for reaching out. We've received your inquiry and will get back to you within 24 hours with a clear path forward.<br><br>In the meantime, feel free to explore our pricing or WhatsApp us directly.</p>
-      <div class="success-links">
-        <a href="pricing.html" class="btn-suc btn-suc-blue">Explore Pricing →</a>
-        <a href="https://wa.me/254713082563" target="_blank" class="btn-suc btn-suc-outline">💬 WhatsApp Us</a>
+
+      <div class="left-divider"></div>
+
+      <div class="contact-quick">
+        <a href="mailto:hello@lumicore.co.ke" class="contact-quick-item">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          hello@lumicore.co.ke
+        </a>
+        <a href="https://wa.me/254713082563" target="_blank" class="contact-quick-item">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          +254 713 082 563
+        </a>
       </div>
     </div>
   </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right-panel">
+    <div class="form-wrap">
+
+      <!-- PROGRESS -->
+      <div class="progress-header" id="progressHeader">
+        <div class="step-indicator">
+          <div class="step-dot active" id="sd1"><span class="dot-num">1</span></div>
+          <div class="step-line" id="sl1"></div>
+          <div class="step-dot" id="sd2"><span class="dot-num">2</span></div>
+          <div class="step-line" id="sl2"></div>
+          <div class="step-dot" id="sd3"><span class="dot-num">3</span></div>
+          <div class="step-line" id="sl3"></div>
+          <div class="step-dot" id="sd4"><span class="dot-num">4</span></div>
+        </div>
+        <div class="step-labels">
+          <span class="step-label active" id="sl-1">About You</span>
+          <span class="step-label" id="sl-2">Services</span>
+          <span class="step-label" id="sl-3">Goals</span>
+          <span class="step-label" id="sl-4">Budget</span>
+        </div>
+        <div style="margin-top:1rem;">
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="progressFill" style="width:25%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <form id="inquiryForm" style="margin-top:2rem;">
+
+        <!-- STEP 1: ABOUT YOU -->
+        <div class="step-panel active" id="step1">
+          <div class="step-heading">
+            <div class="step-num-label">Step 1 of 4</div>
+            <div class="step-title">About You</div>
+            <div class="step-sub">Let's start with who you are and your business.</div>
+          </div>
+          <div class="fields-grid">
+            <div class="field">
+              <label>First Name *</label>
+              <input type="text" id="firstName" name="first_name" placeholder="Jane" required>
+            </div>
+            <div class="field">
+              <label>Last Name *</label>
+              <input type="text" id="lastName" name="last_name" placeholder="Smith" required>
+            </div>
+            <div class="field">
+              <label>Business Email *</label>
+              <input type="email" id="emailField" name="email" placeholder="jane@company.com" required>
+            </div>
+            <div class="field">
+              <label>Phone / WhatsApp *</label>
+              <input type="tel" id="phoneField" name="phone" placeholder="+254 7XX XXX XXX" required>
+            </div>
+            <div class="field full">
+              <label>Business / Organization Name *</label>
+              <input type="text" id="businessField" name="business" placeholder="Your Business Name" required>
+            </div>
+            <div class="field full">
+              <label>Industry</label>
+              <input type="text" id="industryField" name="industry" placeholder="e.g. Consulting, Retail, Healthcare, NGO...">
+            </div>
+          </div>
+          <div class="btn-row">
+            <div></div>
+            <button type="button" class="btn-next" onclick="goToStep(2)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: SERVICES -->
+        <div class="step-panel" id="step2">
+          <div class="step-heading">
+            <div class="step-num-label">Step 2 of 4</div>
+            <div class="step-title">Services of Interest</div>
+            <div class="step-sub">What does your business need most? Select all that apply.</div>
+          </div>
+          <div class="services-grid">
+            <div class="service-choice" onclick="toggleService(this, 'CRM Consultation & Optimization')">
+              <div class="sc-icon">🔗</div>
+              <span class="sc-label">CRM Consultation & Optimization</span>
+              <div class="sc-check"></div>
+            </div>
+            <div class="service-choice" onclick="toggleService(this, 'Web Design & Development')">
+              <div class="sc-icon">⬡</div>
+              <span class="sc-label">Web Design & Development</span>
+              <div class="sc-check"></div>
+            </div>
+            <div class="service-choice" onclick="toggleService(this, 'Search Engine Optimization')">
+              <div class="sc-icon">◎</div>
+              <span class="sc-label">Search Engine Optimization</span>
+              <div class="sc-check"></div>
+            </div>
+            <div class="service-choice" onclick="toggleService(this, 'Branding & Visual Identity')">
+              <div class="sc-icon">◈</div>
+              <span class="sc-label">Branding & Visual Identity</span>
+              <div class="sc-check"></div>
+            </div>
+            <div class="service-choice" onclick="toggleService(this, 'Digital Marketing Strategy')">
+              <div class="sc-icon">⟁</div>
+              <span class="sc-label">Digital Marketing Strategy</span>
+              <div class="sc-check"></div>
+            </div>
+            <div class="service-choice" onclick="toggleService(this, 'Copywriting & Content Strategy')">
+              <div class="sc-icon">✦</div>
+              <span class="sc-label">Copywriting & Content Strategy</span>
+              <div class="sc-check"></div>
+            </div>
+            <div class="service-choice" onclick="toggleService(this, 'Full Ecosystem — Multiple Services')">
+              <div class="sc-icon">🌐</div>
+              <span class="sc-label">Full Ecosystem — Multiple Services</span>
+              <div class="sc-check"></div>
+            </div>
+            <div class="service-choice" onclick="toggleService(this, 'Not sure — need guidance')">
+              <div class="sc-icon">💭</div>
+              <span class="sc-label">Not sure — need guidance</span>
+              <div class="sc-check"></div>
+            </div>
+          </div>
+          <input type="hidden" name="services_interested" id="servicesHidden">
+          <div class="btn-row">
+            <button type="button" class="btn-prev" onclick="goToStep(1)">← Back</button>
+            <button type="button" class="btn-next" onclick="goToStep(3)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: GOALS -->
+        <div class="step-panel" id="step3">
+          <div class="step-heading">
+            <div class="step-num-label">Step 3 of 4</div>
+            <div class="step-title">Goals & Timeline</div>
+            <div class="step-sub">Help us understand where you are and what you're working towards.</div>
+          </div>
+          <div class="fields-grid">
+            <div class="field full">
+              <label>What's your biggest challenge right now? *</label>
+              <textarea id="challengeField" name="challenge" rows="4" placeholder="Tell us what you're working on and where you're stuck..." required></textarea>
+            </div>
+            <div class="field full">
+              <label>What does success look like for you?</label>
+              <textarea id="successField" name="success_vision" rows="3" placeholder="Describe what a great outcome looks like for your business..."></textarea>
+            </div>
+            <div class="field">
+              <label>Timeline *</label>
+              <select id="timelineField" name="timeline" required>
+                <option value="">— Select timeline —</option>
+                <option>ASAP — need to move quickly</option>
+                <option>Within 1 month</option>
+                <option>1–3 months</option>
+                <option>3–6 months</option>
+                <option>Just exploring options</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Where did you hear about us?</label>
+              <select id="sourceField" name="source">
+                <option value="">— Select —</option>
+                <option>LinkedIn</option>
+                <option>Google Search</option>
+                <option>Referral / Word of mouth</option>
+                <option>WhatsApp</option>
+                <option>Instagram</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn-prev" onclick="goToStep(2)">← Back</button>
+            <button type="button" class="btn-next" onclick="goToStep(4)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 4: BUDGET -->
+        <div class="step-panel" id="step4">
+          <div class="step-heading">
+            <div class="step-num-label">Step 4 of 4</div>
+            <div class="step-title">Budget Range</div>
+            <div class="step-sub">Help us recommend the right package for your investment level.</div>
+          </div>
+          <div class="budget-grid" id="budgetGrid">
+            <div class="budget-choice" onclick="selectBudget(this, 'Under Ksh 30,000')">
+              <div class="budget-amount">Under Ksh 30,000</div>
+              <div class="budget-note">Entry level</div>
+            </div>
+            <div class="budget-choice" onclick="selectBudget(this, 'Ksh 30,000 – 60,000')">
+              <div class="budget-amount">Ksh 30,000 – 60,000</div>
+              <div class="budget-note">Starter package</div>
+            </div>
+            <div class="budget-choice" onclick="selectBudget(this, 'Ksh 65,000 – 120,000')">
+              <div class="budget-amount">Ksh 65,000 – 120,000</div>
+              <div class="budget-note">Business package</div>
+            </div>
+            <div class="budget-choice" onclick="selectBudget(this, 'Ksh 130,000 – 250,000')">
+              <div class="budget-amount">Ksh 130,000 – 250,000</div>
+              <div class="budget-note">Premium package</div>
+            </div>
+            <div class="budget-choice" onclick="selectBudget(this, 'Ksh 250,000+')">
+              <div class="budget-amount">Ksh 250,000+</div>
+              <div class="budget-note">Enterprise level</div>
+            </div>
+            <div class="budget-choice" onclick="selectBudget(this, 'Open to discussion')">
+              <div class="budget-amount">Open to discussion</div>
+              <div class="budget-note">Let's talk first</div>
+            </div>
+          </div>
+          <input type="hidden" name="budget" id="budgetHidden">
+          <div class="field full" style="margin-bottom:1.5rem;">
+            <label>Anything else you'd like us to know?</label>
+            <textarea id="notesField" name="additional_notes" rows="3" placeholder="Share any additional context, questions, or special requirements..."></textarea>
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn-prev" onclick="goToStep(3)">← Back</button>
+            <button type="button" class="btn-submit" id="submitBtn" onclick="submitInquiry()">
+              Submit Inquiry →
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- SUCCESS SCREEN -->
+      <div class="success-screen" id="successScreen">
+        <div class="success-badge">✅</div>
+        <h2 class="success-h2">Inquiry <em>received.</em></h2>
+        <p class="success-p">Thank you for reaching out to LumiCore. Meshakh will personally review your inquiry and get back to you within 24 hours with a clear path forward.</p>
+        <div class="success-actions">
+          <a href="pricing.html" class="btn-suc btn-suc-blue">Explore Pricing →</a>
+          <a href="https://wa.me/254713082563" target="_blank" class="btn-suc btn-suc-outline">💬 WhatsApp Us</a>
+          <a href="index.html" class="btn-suc btn-suc-outline">← Back to Website</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
+
 <footer>
   <div class="footer-logo">Lumi<span>Core</span></div>
-  <div class="footer-center">Copyright © 2026 LumiCore. Digital Consulting & Growth Solutions. Developed By Meshakh.<br>Clarity · Systems · Growth</div>
-  <ul class="footer-links"><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li></ul>
+  <div class="footer-center">Copyright © 2026 LumiCore. Digital Consulting & Growth Solutions.<br>Clarity · Systems · Growth</div>
+  <ul class="footer-links">
+    <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+  </ul>
 </footer>
+
 <script>
-  const nav=document.getElementById("nav");
-  window.addEventListener("scroll",()=>nav.classList.toggle("scrolled",window.scrollY>50));
-  let currentStep=1;
-  const selectedServices=[];
-  const pct=[25,50,75,100];
-  function goTo(n){
-    document.getElementById("step"+currentStep).classList.remove("active");
-    document.getElementById("ps"+currentStep).classList.remove("active");
-    document.getElementById("ps"+currentStep).classList.add("done");
-    if(currentStep>1&&n<currentStep){document.getElementById("ps"+currentStep).classList.remove("done");}
-    currentStep=n;
-    document.getElementById("step"+n).classList.add("active");
-    document.getElementById("ps"+n).classList.add("active");
-    document.getElementById("ps"+n).classList.remove("done");
-    document.getElementById("progressFill").style.width=pct[n-1]+"%";
-    window.scrollTo({top:0,behavior:"smooth"});
-  }
-  function toggleChoice(el,val){
-    el.classList.toggle("selected");
-    const idx=selectedServices.indexOf(val);
-    if(idx>-1)selectedServices.splice(idx,1);else selectedServices.push(val);
-    document.getElementById("servicesHidden").value=selectedServices.join(", ");
-  }
-  document.getElementById("submitBtn").addEventListener("click", async function(e) {
-  e.preventDefault();
-  const btn = this;
-  btn.disabled = true;
-  btn.textContent = "Sending...";
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
 
-  try {
-    const r = await fetch("https://formspree.io/f/mjgabwdz", {
-      method: "POST",
-      body: new FormData(document.getElementById("inquiryForm")),
-      headers: { "Accept": "application/json" }
-    });
+  // Step management
+  let currentStep = 1;
+  const totalSteps = 4;
+  const progressMap = { 1: 25, 2: 50, 3: 75, 4: 100 };
 
-    if (r.ok) {
-      document.getElementById("inquiryForm").style.display = "none";
-      document.getElementById("progressWrap").style.display = "none";
-      document.getElementById("inquiryHeader").style.display = "none";
-      document.getElementById("successScreen").classList.add("show");
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      btn.disabled = false;
-      btn.textContent = "Submit Inquiry →";
-      alert("Failed. Please WhatsApp us at +254713082563");
+  function goToStep(n) {
+    // Validate current step before proceeding
+    if (n > currentStep && !validateStep(currentStep)) return;
+
+    // Update step panels
+    document.getElementById('step' + currentStep).classList.remove('active');
+    document.getElementById('step' + n).classList.add('active');
+
+    // Update dots
+    const prevDot = document.getElementById('sd' + currentStep);
+    const nextDot = document.getElementById('sd' + n);
+    prevDot.classList.remove('active');
+    if (n > currentStep) prevDot.classList.add('done');
+    else prevDot.classList.remove('done');
+    nextDot.classList.add('active');
+    nextDot.classList.remove('done');
+
+    // Update lines
+    for (let i = 1; i < totalSteps; i++) {
+      const line = document.getElementById('sl' + i);
+      if (line) line.classList.toggle('done', i < n);
     }
-  } catch(err) {
-    btn.disabled = false;
-    btn.textContent = "Submit Inquiry →";
-    alert("Connection error. Please WhatsApp us at +254713082563");
+
+    // Update labels
+    for (let i = 1; i <= totalSteps; i++) {
+      const lbl = document.getElementById('sl-' + i);
+      if (!lbl) continue;
+      lbl.classList.remove('active', 'done');
+      if (i === n) lbl.classList.add('active');
+      else if (i < n) lbl.classList.add('done');
+    }
+
+    // Update progress bar
+    document.getElementById('progressFill').style.width = progressMap[n] + '%';
+
+    currentStep = n;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-});
+
+  function validateStep(step) {
+    if (step === 1) {
+      const fields = ['firstName', 'lastName', 'emailField', 'phoneField', 'businessField'];
+      for (const id of fields) {
+        const el = document.getElementById(id);
+        if (!el.value.trim()) {
+          el.focus();
+          el.style.borderColor = '#ff4d6d';
+          setTimeout(() => el.style.borderColor = '', 2000);
+          return false;
+        }
+      }
+    }
+    if (step === 3) {
+      const challenge = document.getElementById('challengeField');
+      const timeline = document.getElementById('timelineField');
+      if (!challenge.value.trim()) {
+        challenge.focus();
+        challenge.style.borderColor = '#ff4d6d';
+        setTimeout(() => challenge.style.borderColor = '', 2000);
+        return false;
+      }
+      if (!timeline.value) {
+        timeline.focus();
+        timeline.style.borderColor = '#ff4d6d';
+        setTimeout(() => timeline.style.borderColor = '', 2000);
+        return false;
+      }
+    }
+    return true;
+  }
+
+  // Services selection
+  const selectedServices = [];
+  function toggleService(el, val) {
+    el.classList.toggle('selected');
+    const idx = selectedServices.indexOf(val);
+    if (idx > -1) selectedServices.splice(idx, 1);
+    else selectedServices.push(val);
+    document.getElementById('servicesHidden').value = selectedServices.join(', ');
+  }
+
+  // Budget selection
+  function selectBudget(el, val) {
+    document.querySelectorAll('.budget-choice').forEach(b => b.classList.remove('selected'));
+    el.classList.add('selected');
+    document.getElementById('budgetHidden').value = val;
+  }
+
+  // Submit
+  async function submitInquiry() {
+    if (!validateStep(4)) return;
+
+    if (!document.getElementById('budgetHidden').value) {
+      alert('Please select a budget range to continue.');
+      return;
+    }
+
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    const data = {
+      first_name: document.getElementById('firstName').value,
+      last_name: document.getElementById('lastName').value,
+      email: document.getElementById('emailField').value,
+      phone: document.getElementById('phoneField').value,
+      business: document.getElementById('businessField').value,
+      industry: document.getElementById('industryField').value,
+      services_interested: document.getElementById('servicesHidden').value || 'Not specified',
+      challenge: document.getElementById('challengeField').value,
+      success_vision: document.getElementById('successField').value,
+      timeline: document.getElementById('timelineField').value,
+      source: document.getElementById('sourceField').value,
+      budget: document.getElementById('budgetHidden').value,
+      additional_notes: document.getElementById('notesField').value
+    };
+
+    try {
+      const r = await fetch('https://formspree.io/f/mjgabwdz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (r.ok) {
+        document.getElementById('inquiryForm').style.display = 'none';
+        document.getElementById('progressHeader').style.display = 'none';
+        document.getElementById('successScreen').classList.add('show');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const errData = await r.json();
+        btn.disabled = false;
+        btn.textContent = 'Submit Inquiry →';
+        alert('Submission failed. Please WhatsApp us directly at +254713082563');
+      }
+    } catch (err) {
+      btn.disabled = false;
+      btn.textContent = 'Submit Inquiry →';
+      alert('Connection error. Please WhatsApp us directly at +254713082563');
+    }
+  }
 </script>
-</body></html>
+</body>
+</html>
