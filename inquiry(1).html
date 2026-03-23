@@ -181,9 +181,8 @@ footer{background:#06101e;padding:3rem 5rem;display:flex;justify-content:space-b
               <option value="">— Select budget range —</option>
               <option>Under Ksh 30,000</option>
               <option>Ksh 30,000 – 60,000</option>
-              <option>Ksh 65,000 – 120,000</option>
-              <option>Ksh 130,000 – 250,000</option>
-              <option>Ksh 250,000+</option>
+              <option>Ksh 60,000 – 90,000</option>
+              <option>Ksh 100,000 – 130,000</option>
               <option>Open to discussion</option>
             </select>
           </div>
@@ -233,19 +232,35 @@ footer{background:#06101e;padding:3rem 5rem;display:flex;justify-content:space-b
     if(idx>-1)selectedServices.splice(idx,1);else selectedServices.push(val);
     document.getElementById("servicesHidden").value=selectedServices.join(", ");
   }
-  document.getElementById("inquiryForm").addEventListener("submit",async function(e){
-    e.preventDefault();
-    const btn=document.getElementById("submitBtn");
-    btn.disabled=true;btn.textContent="Sending...";
-    try{
-      const r=await fetch("https://formspree.io/f/mjgabwdz",{method:"POST",body:new FormData(this),headers:{Accept:"application/json"}});
-      if(r.ok){
-        document.getElementById("inquiryForm").style.display="none";
-        document.getElementById("progressWrap").style.display="none";
-        document.getElementById("inquiryHeader").style.display="none";
-        document.getElementById("successScreen").classList.add("show");
-      }else{btn.disabled=false;btn.textContent="Submit Inquiry →";alert("Something went wrong. Please try again or WhatsApp us directly.");}
-    }catch(err){btn.disabled=false;btn.textContent="Submit Inquiry →";alert("Connection error. Please check your internet and try again.");}
-  });
+  document.getElementById("submitBtn").addEventListener("click", async function(e) {
+  e.preventDefault();
+  const btn = this;
+  btn.disabled = true;
+  btn.textContent = "Sending...";
+
+  try {
+    const r = await fetch("https://formspree.io/f/mjgabwdz", {
+      method: "POST",
+      body: new FormData(document.getElementById("inquiryForm")),
+      headers: { "Accept": "application/json" }
+    });
+
+    if (r.ok) {
+      document.getElementById("inquiryForm").style.display = "none";
+      document.getElementById("progressWrap").style.display = "none";
+      document.getElementById("inquiryHeader").style.display = "none";
+      document.getElementById("successScreen").classList.add("show");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      btn.disabled = false;
+      btn.textContent = "Submit Inquiry →";
+      alert("Failed. Please WhatsApp us at +254713082563");
+    }
+  } catch(err) {
+    btn.disabled = false;
+    btn.textContent = "Submit Inquiry →";
+    alert("Connection error. Please WhatsApp us at +254713082563");
+  }
+});
 </script>
 </body></html>
